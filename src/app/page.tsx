@@ -6,7 +6,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-8">Performance Dudes</h1>
         <p className="text-xl leading-relaxed">
           We accelerate software development through AI. For teams across
-          engineering, operations, and beyond — we build, modernize, and make
+          engineering, operations, and beyond. We build, modernize, and make
           your projects ready for the future. Fast, fixed price, built for
           your team to own.
         </p>
@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         <p className="text-lg leading-relaxed mb-4">
           We give you the racing car you need. The speed you always wanted for your
-          ideas to come true. Lightweight. Responsive. AI as the engine — so your
+          ideas to come true. Lightweight. Responsive. AI as the engine, so your
           team can move as fast as your ambition.
         </p>
         <pre className="font-mono text-base leading-relaxed text-gray-600 mb-6">
@@ -34,7 +34,7 @@ The Driver    = your team`}
         <p className="text-lg leading-relaxed">
           We&apos;re the pit crew. We come in, build the car, tune the engine, and
           hand you the keys. Weeks, not months. And when we leave,
-          your team doesn&apos;t need us to keep driving — the car was built for them.
+          your team doesn&apos;t need us to keep driving. The car was built for them.
         </p>
       </section>
 
@@ -44,28 +44,28 @@ The Driver    = your team`}
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
             <span className="font-semibold">Speed is removing what slows you down.</span>{" "}
-            Not cutting corners — cutting waste. Long approval chains, bloated
+            Not cutting corners, cutting waste. Long approval chains, bloated
             processes, meetings that should have been a message. We remove all of
             it so your team can focus on what matters.
           </p>
           <p>
             <span className="font-semibold">Knowledge belongs in the project, not in people&apos;s heads.</span>{" "}
             When someone leaves, their knowledge shouldn&apos;t leave with them. We
-            embed everything — domain context, decisions, conventions — into the
-            project itself. So any team member, or any AI tool, can pick it up and
+            embed everything into the project itself: domain context, decisions,
+            conventions. So any team member, or any AI tool, can pick it up and
             contribute.
           </p>
           <p>
             <span className="font-semibold">AI generates. Humans judge.</span>{" "}
             AI makes us fast. It doesn&apos;t make us careless. Senior engineers make
             the decisions. We&apos;ll always tell you what AI can do and what it
-            can&apos;t — because trust starts with honesty.
+            can&apos;t, because trust starts with honesty.
           </p>
           <p>
             <span className="font-semibold">We succeed when your team succeeds.</span>{" "}
             We&apos;re not here to create dependency. We&apos;re here to make your people
             more capable, your projects more maintainable, and your organization
-            faster — with or without us.
+            faster. With or without us.
           </p>
         </div>
       </section>
@@ -79,7 +79,7 @@ The Driver    = your team`}
             <h3 className="text-xl font-semibold mb-2">Build</h3>
             <p className="text-lg leading-relaxed">
               You have an idea. We make it real. Fixed price, fast, and when we&apos;re
-              done your team takes over — because the project is AI-ready and your
+              done your team takes over. The project is AI-ready and your
               people trained alongside us from the start.
             </p>
           </div>
@@ -98,7 +98,7 @@ The Driver    = your team`}
             <h3 className="text-xl font-semibold mb-2">Performance Audit</h3>
             <p className="text-lg leading-relaxed">
               Not sure where to start? We look at your project and tell you what
-              we see — what&apos;s slowing you down, what we&apos;d change, and what it
+              we see: what&apos;s slowing you down, what we&apos;d change, and what it
               would take. A short engagement, fixed price, no commitment beyond that.
             </p>
           </div>
@@ -107,7 +107,7 @@ The Driver    = your team`}
             <h3 className="text-xl font-semibold mb-2">Team Upgrade</h3>
             <p className="text-lg leading-relaxed">
               Your team is capable but not as fast as they could be. We don&apos;t
-              replace them — we upgrade their setup: AI tooling, workflows, project
+              replace them. We upgrade their setup: AI tooling, workflows, project
               structure, and practices. Same people, dramatically faster.
             </p>
           </div>
@@ -115,7 +115,7 @@ The Driver    = your team`}
           <div>
             <h3 className="text-xl font-semibold mb-2">Autopilot for the chores</h3>
             <p className="text-lg leading-relaxed">
-              Updates, tests, documentation, security patches — the things nobody
+              Updates, tests, documentation, security patches. The things nobody
               wants to do but everyone needs done. We set up your project so AI
               handles the routine work. Your team focuses on building what&apos;s next.
             </p>
@@ -125,7 +125,7 @@ The Driver    = your team`}
             <h3 className="text-xl font-semibold mb-2">Race Strategy</h3>
             <p className="text-lg leading-relaxed">
               You have 10 ideas. We help you find the 3 that actually move the
-              needle — and in what order. Then we build them.
+              needle, and in what order. Then we build them.
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ The Driver    = your team`}
           <p>
             <span className="font-semibold">We build it.</span>{" "}
             Your team works alongside us from the start. Weekly demos of working
-            progress — not slides, not status reports.
+            progress. Not slides, not status reports.
           </p>
           <p>
             <span className="font-semibold">You own it.</span>{" "}
@@ -169,7 +169,7 @@ The Driver    = your team`}
           structures.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          We come together as a professional unit for each engagement — small
+          We come together as a professional unit for each engagement. Small
           enough to be fast, experienced enough to be trusted with what matters.
         </p>
         <p className="text-lg leading-relaxed">
@@ -182,8 +182,8 @@ The Driver    = your team`}
       <section className="mb-24">
         <h2 className="text-2xl font-bold mb-4">Let&apos;s talk</h2>
         <p className="text-lg leading-relaxed mb-6">
-          Got a project, a problem, or just a question? We&apos;d love to hear about
-          it. No pressure, no pitch — just a conversation about what&apos;s possible.
+          Got a project, an idea, or just a question? We&apos;d love to hear about
+          it. No pressure, no pitch. Just a conversation about what&apos;s possible.
         </p>
         <p className="text-lg">
           <a href="mailto:hello@performance-dudes.com" className="underline font-semibold">
@@ -193,8 +193,9 @@ The Driver    = your team`}
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 pt-8 text-gray-400 text-sm">
-        Performance Dudes. We get things done.
+      <footer className="border-t border-gray-200 pt-8 text-gray-400 text-sm flex justify-between">
+        <span>Performance Dudes. We get things done.</span>
+        <a href="/imprint" className="hover:text-gray-600">Imprint</a>
       </footer>
     </main>
   );
