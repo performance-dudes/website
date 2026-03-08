@@ -31,5 +31,6 @@ Performance Dudes marketing website. Next.js 15 + TypeScript + Tailwind CSS 4.
 ## Workflow
 
 - Use PRs, never push directly to main
-- Commits follow semantic PR conventions
+- Commits follow conventional commits (`feat:`, `fix:`, `docs:`, `refactor:`, `style:`)
+- Commit bodies must explain **why** the change was made and what motivated it
 - Content changes should reference the relevant content decision or orga doc
