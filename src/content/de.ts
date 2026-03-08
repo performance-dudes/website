@@ -1,12 +1,12 @@
 export const de = {
   hero: {
     title: "Performance Dudes",
-    eyebrow: "AI-First Software Engineering",
+    eyebrow: "AI-Native Software Engineering",
     tagline: "Build fast. Enable. Leave.",
-    text: "Wenn wir gehen, braucht ihr uns nicht mehr. Euer Team baut von Tag eins mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Jede Entscheidung, jeder Kontext lebt direkt im Projekt. Festpreis, geliefert in Wochen. Schnell genug, damit gro\u00dfe Ideen nicht warten m\u00fcssen.",
+    text: "Die meisten Beratungen verkaufen Zeit. Wir verkaufen Ergebnisse. Festpreis, geliefert in Wochen, und wenn wir gehen, braucht euer Team uns nicht mehr. Wir bauen, modernisieren und machen Software-Projekte AI-ready. Für Teams in Engineering, Operations und darüber hinaus. Schnell genug, damit große Ideen nicht warten müssen.",
   },
   methodology: {
-    text: "Festpreis. AI-native Delivery. Jedes Projekt ist auf Wochen ausgelegt, nicht auf Monate. AI generiert, erfahrene Engineers entscheiden. So liefern wir schneller, als die meisten Beratungen ihren ersten Statusbericht schreiben.",
+    text: "AI generiert, erfahrene Engineers entscheiden. So liefern wir schneller, als die meisten Beratungen ihren ersten Statusbericht schreiben.",
   },
   racingCar: {
     title: "Gebaut f\u00fcr ambitionierte Fahrer",
@@ -70,7 +70,7 @@ export const de = {
       },
       {
         name: "Bauen",
-        text: "Ihr habt eine Idee. Euer Team arbeitet von Tag eins mit uns. Die Codebase ist so strukturiert, dass euer Team danach selbstst\u00e4ndig weiterliefert. Fortschritt zeigt sich in laufender Software, nicht in Folien.",
+        text: "Ihr habt eine Idee. Wir machen daraus produktionsreife Software. Schnell, weil AI den Code generiert. Solide, weil erfahrene Architekten entscheiden.",
       },
       {
         name: "Replace Your SaaS",
@@ -117,7 +117,7 @@ export const de = {
     sectionLabel: "Das Team",
     quote:
       "Wir hinterlassen Teams st\u00e4rker, als wir sie vorgefunden haben. Das ist der Ma\u00dfstab.",
-    p1: "Nicht abgerechnete Stunden, nicht gelieferte Folien. Wenn wir gehen, ist euer Team schneller, euer Projekt klarer, und ihr braucht uns nicht, um es am Laufen zu halten.",
+    p1: "Nicht in abgerechneten Stunden. Nicht in gelieferten Folien. Wir messen uns daran, wie schnell euer Team nach dem Engagement liefert. Und daran, wie viele Fragen die Codebase beantwortet, bevor jemand fragen muss.",
     experience: "Wir arbeiten selbst so. AI übernimmt die Routine, wir entscheiden. Kein Konzept, das wir für euch entwickelt haben. Unsere eigene Arbeitsweise. Sie weiterzugeben, und dabei an Projekten zu arbeiten, die uns wirklich interessieren, dafür sind wir hier.",
     p2: "Wir sind ein Kollektiv von Software-Architekten mit jeweils über 15 Jahren Industrie-Erfahrung, das sich pro Engagement als feste Einheit zusammenfindet. Klein genug, um schnell zu sein. Jeder von uns hat Produktionssysteme gebaut, skaliert und gewartet. Legacy-Migrationen, Greenfield-Projekte, AI-native Architekturen.",
     p3: "Der Name ist verspielt. Die Arbeit ist es nicht.",

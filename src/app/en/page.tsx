@@ -3,7 +3,7 @@ import { getContent } from "@/content";
 import { HomePage } from "../HomePage";
 
 export const metadata: Metadata = {
-  title: "Performance Dudes — AI-First Software Engineering",
+  title: "Performance Dudes — AI-Native Software Engineering",
   description: "Senior engineers. Fixed price, delivered in weeks. We build, modernize, and make software AI-ready. When we leave, your team keeps shipping independently.",
   keywords: ["fixed price software development", "AI-first software engineering", "software modernization consulting Germany", "AI-ready codebase", "senior software engineers"],
   openGraph: {

@@ -1,12 +1,12 @@
 export const en = {
   hero: {
     title: "Performance Dudes",
-    eyebrow: "AI-First Software Engineering",
+    eyebrow: "AI-Native Software Engineering",
     tagline: "Build fast. Enable. Leave.",
-    text: "When we leave, you don\u2019t need us anymore. Your team builds alongside us from day one in a codebase built for AI. Every decision, every context lives in the project. Fixed price, delivered in weeks. Fast enough that big ideas don\u2019t have to wait.",
+    text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks, and when we leave, your team doesn\u2019t need us anymore. We build, modernize, and make software projects AI-ready. For teams across engineering, operations, and beyond. Fast enough that big ideas don\u2019t have to wait.",
   },
   methodology: {
-    text: "Fixed price. AI-native delivery. Every project is scoped in weeks, not months. AI generates, senior engineers decide. That is how we ship faster than most consultancies write their first status report.",
+    text: "AI generates, senior engineers decide. That is how we ship faster than most consultancies write their first status report.",
   },
   racingCar: {
     title: "Built for ambitious drivers",
@@ -70,7 +70,7 @@ export const en = {
       },
       {
         name: "Build",
-        text: "You have an idea. Your team works alongside us from day one. The codebase is structured so your team ships independently after we leave. Progress shows in working software, not slides.",
+        text: "You have an idea. We turn it into production-ready software. Fast, because AI generates the code. Solid, because senior architects decide.",
       },
       {
         name: "Replace Your SaaS",
@@ -117,7 +117,7 @@ export const en = {
     sectionLabel: "The team",
     quote:
       "We leave teams stronger than we found them. That\u2019s the measure.",
-    p1: "Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
+    p1: "Not in hours billed. Not in slides delivered. We measure ourselves by how fast your team ships after the engagement. And by how many questions the codebase answers before anyone has to ask.",
     experience: "We work this way ourselves. AI handles the routine, we make the decisions. Not a methodology we designed for clients. Our own way of working. Passing it on, while working on projects we genuinely care about, is why we are here.",
     p2: "We are a collective of software architects with 15+ years of industry experience each, who come together as a tight unit per engagement. Small enough to be fast. Every one of us has built, scaled, and maintained production systems. Legacy migrations, greenfield projects, AI-native architectures.",
     p3: "The name is playful. The work is not.",
