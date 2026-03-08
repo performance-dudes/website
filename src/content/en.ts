@@ -1,9 +1,9 @@
 export const en = {
   hero: {
     title: "Performance Dudes",
-    eyebrow: "AI-First Software Engineering",
+    eyebrow: "Fixed price. Done in weeks. Your team takes over.",
     tagline: "Build fast. Enable. Leave.",
-    text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks. Your team builds alongside us from day one in a codebase built for AI. Every decision, every context lives in the project. You work with us, not just next to us. When we leave, you don't need us anymore. Fast enough that big ideas don't have to wait.",
+    text: "When we leave, you don\u2019t need us anymore. Your team builds alongside us from day one in a codebase built for AI. Every decision, every context lives in the project. Fixed price, delivered in weeks. Fast enough that big ideas don\u2019t have to wait.",
   },
   methodology: {
     text: "Fixed price. AI-native delivery. Every project is scoped in weeks, not months. AI generates, senior engineers decide. That is how we ship faster than most consultancies write their first status report.",
@@ -12,7 +12,7 @@ export const en = {
     title: "Built for ambitious drivers",
     sectionLabel: "The Analogy",
     p1: "You have ideas. Big ones. But your project can\u2019t keep up. Every change takes months. The people who built it moved on. Nobody dares touch what they left behind.",
-    p2: "We give you the racing car you need. The speed you always wanted for your ideas to come true. Lightweight. Responsive. AI as the engine, so your team can move as fast as your ambition.",
+    p2: "We give you the racing car you need. Lightweight. Maintainable. AI as the engine. Built for your team, not for us.",
     pitBoard: [
       {
         label: "The Car",
@@ -35,7 +35,7 @@ export const en = {
         desc: "They own it. They drive it. Without needing us in the seat.",
       },
     ],
-    p3: "We are the pit crew. We come in, build the car, tune the engine, and hand you the keys. Weeks, not months. And when we leave, your team doesn\u2019t need us to keep driving. The car was built for your team.",
+    p3: "We are the pit crew. What we leave behind: a codebase your team understands, maintains, and evolves without us.",
   },
   beliefs: {
     title: "What we believe",
@@ -70,7 +70,7 @@ export const en = {
       },
       {
         name: "Build",
-        text: "You have an idea. Your team works alongside us from day one in a codebase structured for AI. Progress shows in working software, not slides. Fixed price, delivered in weeks.",
+        text: "You have an idea. Your team works alongside us from day one. The codebase is structured so your team ships independently after we leave. Progress shows in working software, not slides.",
       },
       {
         name: "Replace Your SaaS",

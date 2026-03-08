@@ -1,9 +1,9 @@
 export const de = {
   hero: {
     title: "Performance Dudes",
-    eyebrow: "AI-First Software Engineering",
+    eyebrow: "Festpreis. Fertig in Wochen. Euer Team \u00fcbernimmt.",
     tagline: "Build fast. Enable. Leave.",
-    text: "Die meisten Beratungen verkaufen Zeit. Wir verkaufen Ergebnisse. Festpreis, geliefert in Wochen. Euer Team baut von Tag eins an mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Jeder Kontext, jede Entscheidung lebt direkt im Projekt. Ihr arbeitet mit uns, nicht nur neben uns. Wenn wir gehen, braucht ihr uns nicht mehr. Schnell genug, damit gro\u00dfe Ideen nicht warten m\u00fcssen.",
+    text: "Wenn wir gehen, braucht ihr uns nicht mehr. Euer Team baut von Tag eins mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Jede Entscheidung, jeder Kontext lebt direkt im Projekt. Festpreis, geliefert in Wochen. Schnell genug, damit gro\u00dfe Ideen nicht warten m\u00fcssen.",
   },
   methodology: {
     text: "Festpreis. AI-native Delivery. Jedes Projekt ist auf Wochen ausgelegt, nicht auf Monate. AI generiert, erfahrene Engineers entscheiden. So liefern wir schneller, als die meisten Beratungen ihren ersten Statusbericht schreiben.",
@@ -12,7 +12,7 @@ export const de = {
     title: "Gebaut f\u00fcr ambitionierte Fahrer",
     sectionLabel: "Die Analogie",
     p1: "Ihr habt Ideen. Gro\u00dfe Ideen. Aber euer Projekt kommt nicht hinterher. Jede \u00c4nderung dauert Monate. Die Leute, die es gebaut haben, sind l\u00e4ngst weg. Und niemand traut sich, anzufassen, was sie hinterlassen haben.",
-    p2: "Wir geben euch den Rennwagen, den ihr braucht. Die Geschwindigkeit, die ihr euch immer gew\u00fcnscht habt, damit eure Ideen Wirklichkeit werden. Leicht. Wendig. AI als Motor, damit euer Team so schnell fahren kann wie euer Ehrgeiz.",
+    p2: "Wir geben euch den Rennwagen, den ihr braucht. Leicht. Wartbar. AI als Motor. Gebaut f\u00fcr euer Team, nicht f\u00fcr uns.",
     pitBoard: [
       {
         label: "Das Auto",
@@ -35,7 +35,7 @@ export const de = {
         desc: "Sie besitzen es. Sie fahren es. Ohne uns am Steuer.",
       },
     ],
-    p3: "Wir sind die Boxencrew. Wir kommen, bauen das Auto, tunen den Motor und geben euch den Schl\u00fcssel. Wochen statt Monate. Und wenn wir gehen, braucht euer Team uns nicht mehr am Steuer. Das Auto wurde f\u00fcr euch gebaut.",
+    p3: "Wir sind die Boxencrew. Was wir hinterlassen: eine Codebase, die euer Team versteht, wartet und ohne uns weiterentwickelt.",
   },
   beliefs: {
     title: "Woran wir glauben",
@@ -70,7 +70,7 @@ export const de = {
       },
       {
         name: "Bauen",
-        text: "Ihr habt eine Idee. Euer Team arbeitet von Tag eins mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Fortschritt zeigt sich in laufender Software, nicht in Folien. Festpreis, geliefert in Wochen.",
+        text: "Ihr habt eine Idee. Euer Team arbeitet von Tag eins mit uns. Die Codebase ist so strukturiert, dass euer Team danach selbstst\u00e4ndig weiterliefert. Fortschritt zeigt sich in laufender Software, nicht in Folien.",
       },
       {
         name: "Replace Your SaaS",
