@@ -195,7 +195,10 @@ The Driver    = your team`}
       {/* Footer */}
       <footer className="border-t border-gray-200 pt-8 text-gray-400 text-sm flex justify-between">
         <span>Performance Dudes. We get things done.</span>
-        <a href="/imprint" className="hover:text-gray-600">Imprint</a>
+        <div className="space-x-4">
+          <a href="/de" className="hover:text-gray-600">Deutsch</a>
+          <a href="/imprint" className="hover:text-gray-600">Imprint</a>
+        </div>
       </footer>
     </main>
   );
