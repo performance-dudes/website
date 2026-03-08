@@ -28,16 +28,16 @@ npm start
 ```
 src/app/
   layout.tsx        Root layout, metadata, global styles
-  page.tsx          Home page (all main content)
+  page.tsx          Home page (EN)
   globals.css       Tailwind import
+  de/
+    page.tsx        Home page (DE)
   imprint/
-    page.tsx        Legal imprint page
+    page.tsx        Legal imprint (EN)
+  impressum/
+    page.tsx        Legal imprint (DE)
 ```
 
 ## Content
 
-Content decisions are documented in `CONTENT-DECISIONS.md`. All website copy aligns to brand and strategy docs in the [orga repo](https://github.com/performance-dudes/orga):
-
-- `docs/mission.md`, `docs/vision.md`, `docs/principles.md` -> brand voice
-- `strategy/offering-model.md` -> product descriptions
-- `brand/racing-car-analogy.md` -> core metaphor
+Content decisions are documented in `content-decisions/`. Each decision records what was decided, why, and what it aligns to.
