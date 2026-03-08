@@ -48,7 +48,7 @@ type Content = {
     readonly sectionLabel: string;
     readonly quote: string;
     readonly p1: string;
-    readonly stats: readonly { readonly value: string; readonly label: string }[];
+    readonly experience: string;
     readonly p2: string;
     readonly p3: string;
   };
@@ -436,24 +436,9 @@ export function HomePage({ t }: { t: Content }) {
                 <p className="text-base text-[#4B5563] leading-[1.75]">
                   {t.whoWeAre.p1}
                 </p>
-                <div
-                  className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 pt-8 border-t border-[#E5E7EB] fade-in"
-                  aria-label="Proof statistics"
-                >
-                  {t.whoWeAre.stats.map((stat) => (
-                    <div key={stat.label} className="flex flex-col gap-1">
-                      <span
-                        className="font-extrabold text-[#EA580C] leading-none"
-                        style={{ fontSize: "clamp(1.75rem, 4vw, 2.25rem)" }}
-                      >
-                        {stat.value}
-                      </span>
-                      <span className="text-sm text-[#6B7280] leading-snug">
-                        {stat.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-base text-[#4B5563] leading-[1.75] mt-4 fade-in">
+                  {t.whoWeAre.experience}
+                </p>
               </div>
               <div>
                 <p className="text-base text-[#4B5563] leading-[1.75] mb-4">

@@ -108,7 +108,7 @@ export const de = {
       },
       {
         bold: "Es geh\u00f6rt euch.",
-        text: "Wenn wir fertig sind, geh\u00f6rt das Projekt euch. AI-ready, dokumentiert, getestet. Euer Team macht ohne uns weiter. Und wenn die n\u00e4chste Idee kommt, sind wir nur ein Gespr\u00e4ch entfernt.",
+        text: "Wenn wir fertig sind, geh\u00f6rt das Projekt euch. AI-ready, dokumentiert, getestet. Und wenn die n\u00e4chste Idee kommt, sind wir nur ein Gespr\u00e4ch entfernt.",
       },
     ],
   },
@@ -118,12 +118,8 @@ export const de = {
     quote:
       "Wir hinterlassen Teams st\u00e4rker, als wir sie vorgefunden haben. Das ist der Ma\u00dfstab.",
     p1: "Nicht abgerechnete Stunden, nicht gelieferte Folien. Wenn wir gehen, ist euer Team schneller, euer Projekt klarer, und ihr braucht uns nicht, um es am Laufen zu halten.",
-    stats: [
-      { value: "150+", label: "Entwickler auf AI-Tooling umgestellt" },
-      { value: "34%", label: "Effizienzsteigerung bei Enterprise-Kunden gemessen" },
-      { value: "8×", label: "Produktivitätsfaktor mit AI in der Praxis" },
-    ],
-    p2: "Wir sind ein Kollektiv erfahrener Engineers, das sich pro Engagement als feste Einheit zusammenfindet. Klein genug, um schnell zu sein. Jeder von uns hat Produktionssysteme gebaut, skaliert und gewartet. Legacy-Migrationen, Greenfield-Projekte, AI-native Architekturen.",
+    experience: "Wir arbeiten selbst so. AI übernimmt die Routine, wir entscheiden. Kein Konzept, das wir für euch entwickelt haben. Unsere eigene Arbeitsweise. Sie weiterzugeben, und dabei an Projekten zu arbeiten, die uns wirklich interessieren, dafür sind wir hier.",
+    p2: "Wir sind ein Kollektiv von Software-Architekten mit jeweils über 15 Jahren Industrie-Erfahrung, das sich pro Engagement als feste Einheit zusammenfindet. Klein genug, um schnell zu sein. Jeder von uns hat Produktionssysteme gebaut, skaliert und gewartet. Legacy-Migrationen, Greenfield-Projekte, AI-native Architekturen.",
     p3: "Der Name ist verspielt. Die Arbeit ist es nicht.",
   },
   cta: {

@@ -108,7 +108,7 @@ export const en = {
       },
       {
         bold: "You own it.",
-        text: "When we are done, the project is yours. AI-ready, documented, tested. Your team continues without us. And if you have the next idea, we are a conversation away.",
+        text: "When we are done, the project is yours. AI-ready, documented, tested. And if you have the next idea, we are a conversation away.",
       },
     ],
   },
@@ -118,12 +118,8 @@ export const en = {
     quote:
       "We leave teams stronger than we found them. That\u2019s the measure.",
     p1: "Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
-    stats: [
-      { value: "150+", label: "developers enabled on AI tooling" },
-      { value: "34%", label: "efficiency increase measured across enterprise clients" },
-      { value: "8\u00d7", label: "productivity factor with AI in production" },
-    ],
-    p2: "We are a collective of senior engineers who come together as a tight unit per engagement. Small enough to be fast. Every one of us has built, scaled, and maintained production systems. Legacy migrations, greenfield projects, AI-native architectures.",
+    experience: "We work this way ourselves. AI handles the routine, we make the decisions. Not a methodology we designed for clients. Our own way of working. Passing it on, while working on projects we genuinely care about, is why we are here.",
+    p2: "We are a collective of software architects with 15+ years of industry experience each, who come together as a tight unit per engagement. Small enough to be fast. Every one of us has built, scaled, and maintained production systems. Legacy migrations, greenfield projects, AI-native architectures.",
     p3: "The name is playful. The work is not.",
   },
   cta: {
