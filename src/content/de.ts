@@ -1,23 +1,45 @@
 export const de = {
   hero: {
     title: "Performance Dudes",
-    text: "Die meisten Beratungen verkaufen Zeit. Wir verkaufen Ergebnisse. Festpreis, geliefert in Wochen, und wenn wir gehen, braucht euer Team uns nicht mehr. Wir bauen, modernisieren und machen Softwareprojekte AI-ready. F\u00fcr Teams aus Engineering, Operations und dar\u00fcber hinaus. Schnell genug, damit eure Ideen nicht warten m\u00fcssen.",
+    eyebrow: "AI-First Software Engineering",
+    tagline: "Build fast. Enable. Leave.",
+    text: "Die meisten Beratungen verkaufen Zeit. Wir verkaufen Ergebnisse. Festpreis, geliefert in Wochen. Euer Team baut von Tag eins an mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Jeder Kontext, jede Entscheidung lebt direkt im Projekt. Ihr arbeitet mit uns, nicht nur neben uns. Wenn wir gehen, braucht ihr uns nicht mehr. Schnell genug, damit gro\u00dfe Ideen nicht warten m\u00fcssen.",
   },
   methodology: {
     text: "Festpreis. AI-native Delivery. Jedes Engagement endet damit, dass euer Team ohne uns weiterarbeiten kann. Das ist kein Slogan. So ist jedes Projekt aufgebaut.",
   },
   racingCar: {
     title: "Gebaut f\u00fcr ambitionierte Fahrer",
+    sectionLabel: "Die Analogie",
     p1: "Ihr habt Ideen. Gro\u00dfe Ideen. Aber euer Projekt kommt nicht hinterher. Jede \u00c4nderung dauert Monate. Die Leute, die es gebaut haben, sind l\u00e4ngst weg. Und niemand traut sich, anzufassen, was sie hinterlassen haben.",
     p2: "Wir geben euch den Rennwagen, den ihr braucht. Die Geschwindigkeit, die ihr euch immer gew\u00fcnscht habt, damit eure Ideen Wirklichkeit werden. Leicht. Wendig. AI als Motor, damit euer Team so schnell fahren kann wie euer Ehrgeiz.",
-    diagram: `Das Auto      = euer Projekt
-Der Motor     = AI
-Die Boxencrew = wir
-Der Fahrer    = euer Team`,
+    pitBoard: [
+      {
+        label: "Das Auto",
+        value: "Euer Projekt",
+        desc: "Das, was ihr baut. Schnell, wartbar, AI-ready.",
+      },
+      {
+        label: "Der Motor",
+        value: "AI",
+        desc: "Kein Gimmick. Der echte Grund, warum wir so schnell sind.",
+      },
+      {
+        label: "Die Boxencrew",
+        value: "Wir",
+        desc: "Wir kommen, bauen, tunen und geben euch den Schl\u00fcssel.",
+      },
+      {
+        label: "Der Fahrer",
+        value: "Euer Team",
+        desc: "Sie besitzen es. Sie fahren es. Ohne uns am Steuer.",
+      },
+    ],
     p3: "Wir sind die Boxencrew. Wir kommen, bauen das Auto, tunen den Motor und geben euch den Schl\u00fcssel. Wochen statt Monate. Und wenn wir gehen, braucht euer Team uns nicht mehr am Steuer. Das Auto wurde f\u00fcr euch gebaut.",
   },
   beliefs: {
     title: "Woran wir glauben",
+    sectionLabel: "Grunds\u00e4tze",
     items: [
       {
         bold: "Geschwindigkeit hei\u00dft: Ballast abwerfen.",
@@ -39,6 +61,7 @@ Der Fahrer    = euer Team`,
   },
   products: {
     title: "Was wir tun",
+    sectionLabel: "Leistungen",
     items: [
       {
         name: "Performance Audit",
@@ -69,6 +92,7 @@ Der Fahrer    = euer Team`,
   },
   howItWorks: {
     title: "So funktioniert es",
+    sectionLabel: "Ablauf",
     steps: [
       {
         bold: "Wir reden.",
@@ -90,14 +114,18 @@ Der Fahrer    = euer Team`,
   },
   whoWeAre: {
     title: "Wer wir sind",
-    p1: "Wir hinterlassen Teams st\u00e4rker, als wir sie vorgefunden haben. Das ist der Ma\u00dfstab. Nicht abgerechnete Stunden, nicht gelieferte Folien. Wenn wir gehen, ist euer Team schneller, euer Projekt klarer, und ihr braucht uns nicht, um es am Laufen zu halten.",
+    sectionLabel: "Das Team",
+    quote:
+      "Wir hinterlassen Teams st\u00e4rker, als wir sie vorgefunden haben. Das ist der Ma\u00dfstab.",
+    p1: "Nicht abgerechnete Stunden, nicht gelieferte Folien. Wenn wir gehen, ist euer Team schneller, euer Projekt klarer, und ihr braucht uns nicht, um es am Laufen zu halten.",
     p2: "Wir sind ein Kollektiv erfahrener Engineers, das sich pro Engagement als feste Einheit zusammenfindet. Klein genug, um schnell zu sein. Erfahren genug, um mit dem Wichtigen betraut zu werden.",
     p3: "Der Name ist verspielt. Die Arbeit ist es nicht.",
   },
   cta: {
     title: "Lass uns reden",
     text: "Ihr habt ein Projekt, eine Idee oder einfach eine Frage? Wir freuen uns, davon zu h\u00f6ren. Kein Druck, kein Pitch. Einfach ein Gespr\u00e4ch dar\u00fcber, was m\u00f6glich ist.",
-    action: "Schreibt uns. Wir vereinbaren einen 30-Minuten-Call, h\u00f6ren zu und sagen euch ehrlich, ob wir helfen k\u00f6nnen.",
+    action:
+      "Schreibt uns. Wir vereinbaren einen 30-Minuten-Call, h\u00f6ren zu und sagen euch ehrlich, ob wir helfen k\u00f6nnen.",
     email: "hello@performance-dudes.de",
   },
   footer: {

@@ -1,23 +1,45 @@
 export const en = {
   hero: {
     title: "Performance Dudes",
-    text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks, and when we leave your team doesn't need us anymore. We build, modernize, and make software projects AI-ready. For teams across engineering, operations, and beyond. Fast enough that your ideas don't have to wait.",
+    eyebrow: "AI-First Software Engineering",
+    tagline: "Build fast. Enable. Leave.",
+    text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks. Your team builds alongside us from day one in a codebase built for AI. Every decision, every context lives in the project. You work with us, not just next to us. When we leave, you don't need us anymore. Fast enough that big ideas don't have to wait.",
   },
   methodology: {
-    text: "Fixed price. AI-native delivery. Every engagement ends with your team able to continue without us. That's not a tagline. It's how every project is structured.",
+    text: "Fixed price. AI-native delivery. Every engagement ends with your team able to continue without us. That\u2019s not a tagline. It\u2019s how every project is structured.",
   },
   racingCar: {
     title: "Built for ambitious drivers",
+    sectionLabel: "The Analogy",
     p1: "You have ideas. Big ones. But your project can\u2019t keep up. Every change takes months. The people who built it moved on. Nobody dares touch what they left behind.",
     p2: "We give you the racing car you need. The speed you always wanted for your ideas to come true. Lightweight. Responsive. AI as the engine, so your team can move as fast as your ambition.",
-    diagram: `The Car       = your project
-The Engine    = AI
-The Pit Crew  = us
-The Driver    = your team`,
+    pitBoard: [
+      {
+        label: "The Car",
+        value: "Your project",
+        desc: "The thing you\u2019re building. Fast, maintainable, AI-ready.",
+      },
+      {
+        label: "The Engine",
+        value: "AI",
+        desc: "Not a gimmick. The real source of speed in every engagement.",
+      },
+      {
+        label: "The Pit Crew",
+        value: "Us",
+        desc: "We come in, build, tune, and hand over the keys.",
+      },
+      {
+        label: "The Driver",
+        value: "Your team",
+        desc: "They own it. They drive it. Without needing us in the seat.",
+      },
+    ],
     p3: "We\u2019re the pit crew. We come in, build the car, tune the engine, and hand you the keys. Weeks, not months. And when we leave, your team doesn\u2019t need us to keep driving. The car was built for them.",
   },
   beliefs: {
     title: "What we believe",
+    sectionLabel: "Principles",
     items: [
       {
         bold: "Speed is removing what slows you down.",
@@ -39,6 +61,7 @@ The Driver    = your team`,
   },
   products: {
     title: "What we do",
+    sectionLabel: "Services",
     items: [
       {
         name: "Performance Audit",
@@ -69,6 +92,7 @@ The Driver    = your team`,
   },
   howItWorks: {
     title: "How it works",
+    sectionLabel: "Process",
     steps: [
       {
         bold: "We talk.",
@@ -90,14 +114,18 @@ The Driver    = your team`,
   },
   whoWeAre: {
     title: "Who we are",
-    p1: "We leave teams stronger than we found them. That\u2019s the measure. Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
+    sectionLabel: "The team",
+    quote:
+      "We leave teams stronger than we found them. That\u2019s the measure.",
+    p1: "Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
     p2: "We\u2019re a collective of senior engineers who come together as a tight unit per engagement. Small enough to be fast. Experienced enough to be trusted with what matters.",
     p3: "The name is playful. The work is not.",
   },
   cta: {
     title: "Let\u2019s talk",
     text: "Got a project, an idea, or just a question? We\u2019d love to hear about it. No pressure, no pitch. Just a conversation about what\u2019s possible.",
-    action: "Write us. We\u2019ll set up a 30-minute call, listen to what you\u2019re working on, and tell you honestly whether we can help.",
+    action:
+      "Write us. We\u2019ll set up a 30-minute call, listen to what you\u2019re working on, and tell you honestly whether we can help.",
     email: "hello@performance-dudes.de",
   },
   footer: {
@@ -111,7 +139,6 @@ The Driver    = your team`,
     title: "Imprint",
     backLink: "\u2190 Back to home",
     backHref: "/en",
-
     sections: [
       {
         title: "Information according to Section 5 TMG",
