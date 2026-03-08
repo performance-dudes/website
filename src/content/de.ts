@@ -1,7 +1,7 @@
 export const de = {
   hero: {
     title: "Performance Dudes",
-    eyebrow: "Festpreis. Fertig in Wochen. Euer Team \u00fcbernimmt.",
+    eyebrow: "AI-First Software Engineering",
     tagline: "Build fast. Enable. Leave.",
     text: "Wenn wir gehen, braucht ihr uns nicht mehr. Euer Team baut von Tag eins mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Jede Entscheidung, jeder Kontext lebt direkt im Projekt. Festpreis, geliefert in Wochen. Schnell genug, damit gro\u00dfe Ideen nicht warten m\u00fcssen.",
   },
