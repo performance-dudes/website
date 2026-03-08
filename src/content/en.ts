@@ -6,7 +6,7 @@ export const en = {
     text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks. Your team builds alongside us from day one in a codebase built for AI. Every decision, every context lives in the project. You work with us, not just next to us. When we leave, you don't need us anymore. Fast enough that big ideas don't have to wait.",
   },
   methodology: {
-    text: "Fixed price. AI-native delivery. Every engagement ends with your team able to continue without us. That\u2019s not a tagline. It\u2019s how every project is structured.",
+    text: "Fixed price. AI-native delivery. Every project is scoped in weeks, not months. AI generates, senior engineers decide. That is how we ship faster than most consultancies write their first status report.",
   },
   racingCar: {
     title: "Built for ambitious drivers",
@@ -35,7 +35,7 @@ export const en = {
         desc: "They own it. They drive it. Without needing us in the seat.",
       },
     ],
-    p3: "We\u2019re the pit crew. We come in, build the car, tune the engine, and hand you the keys. Weeks, not months. And when we leave, your team doesn\u2019t need us to keep driving. The car was built for them.",
+    p3: "We are the pit crew. We come in, build the car, tune the engine, and hand you the keys. Weeks, not months. The car was built for your team.",
   },
   beliefs: {
     title: "What we believe",
@@ -51,7 +51,7 @@ export const en = {
       },
       {
         bold: "AI generates. Humans judge.",
-        text: "AI makes us fast. It doesn\u2019t make us careless. Senior engineers make the decisions. We\u2019ll always tell you what AI can do and what it can\u2019t, because trust starts with honesty.",
+        text: "AI makes us fast. It does not make us careless. Senior engineers make the decisions. We will always tell you what AI can do and what it cannot.",
       },
       {
         bold: "We succeed when your team succeeds.",
@@ -70,7 +70,7 @@ export const en = {
       },
       {
         name: "Build",
-        text: "You have an idea. We make it real. Fixed price, fast, and when we\u2019re done your team takes over. The project is AI-ready and your people trained alongside us from the start.",
+        text: "You have an idea. Your team works alongside us from day one in a codebase structured for AI. Weekly demos of working software, not slides. Fixed price, delivered in weeks.",
       },
       {
         name: "Replace Your SaaS",
@@ -86,7 +86,7 @@ export const en = {
       },
       {
         name: "Race Strategy",
-        text: "You have 10 ideas. We help you find the 3 that actually move the needle, and in what order. Then we build them.",
+        text: "You have 10 ideas. We work with you in a focused strategy session to find the ones with the biggest leverage. The output: a prioritized, scoped, and sequenced plan you can act on immediately.",
       },
     ],
   },
@@ -108,7 +108,7 @@ export const en = {
       },
       {
         bold: "You own it.",
-        text: "When we\u2019re done, the project is yours. AI-ready, documented, tested. Your team continues without us. And if you have the next idea, we\u2019re a conversation away.",
+        text: "When we are done, the project is yours. AI-ready, documented, tested. And if you have the next idea, we are a conversation away.",
       },
     ],
   },
@@ -118,7 +118,7 @@ export const en = {
     quote:
       "We leave teams stronger than we found them. That\u2019s the measure.",
     p1: "Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
-    p2: "We\u2019re a collective of senior engineers who come together as a tight unit per engagement. Small enough to be fast. Experienced enough to be trusted with what matters.",
+    p2: "We are a collective of senior engineers who come together as a tight unit per engagement. Small enough to be fast. Every one of us has built, scaled, and maintained production systems. Legacy migrations, greenfield projects, AI-native architectures.",
     p3: "The name is playful. The work is not.",
   },
   cta: {
