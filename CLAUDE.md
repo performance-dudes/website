@@ -13,7 +13,7 @@ Performance Dudes marketing website. Next.js 15 + TypeScript + Tailwind CSS 4.
 
 ## Content rules
 
-- All copy must align to brand docs in the orga repo (docs/mission.md, docs/principles.md, etc.)
+- All copy must align to identity/strategy docs in the orga repo (identity/mission.md, identity/principles.md, strategy/offering-model.md, etc.)
 - Speak about us, not against competitors
 - CEO-readable first, technical second
 - No em dashes. Use periods, commas, or restructure the sentence.
