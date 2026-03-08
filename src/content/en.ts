@@ -135,6 +135,7 @@ export const en = {
     switchLangHref: "/",
     imprint: "Imprint",
     imprintHref: "/en/imprint",
+    shareLinkedIn: "Share on LinkedIn",
   },
   imprintPage: {
     title: "Imprint",

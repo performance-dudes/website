@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: ["de_DE"],
     type: "website",
+    images: [{ url: "/og-image-text.png", width: 1200, height: 630, alt: "Performance Dudes — AI-Native Software Engineering" }],
   },
   alternates: {
     canonical: "https://performance-dudes.de/en",

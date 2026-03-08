@@ -5,10 +5,23 @@ import { OrganizationJsonLd } from "./JsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://performance-dudes.de"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icons/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/favicon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    images: [{ url: "/og-image-text.png", width: 1200, height: 630, alt: "Performance Dudes — AI-Native Software Engineering" }],
+  },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Performance Dudes — Build fast. Enable. Leave.",
-    description: "Senior engineers. Fixed price, delivered in weeks. AI-first software engineering.",
+    description: "Senior engineers. Fixed price, delivered in weeks. AI-native software engineering.",
+    images: ["/og-image-text.png"],
   },
 };
 
