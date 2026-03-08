@@ -1,7 +1,10 @@
 export const en = {
   hero: {
     title: "Performance Dudes",
-    text: "We accelerate software development through AI. For teams across engineering, operations, and beyond. We build, modernize, and make your projects ready for the future. Fast, fixed price, built for your team to own.",
+    text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks, and when we leave your team doesn't need us anymore. We build, modernize, and make software projects AI-ready. For teams across engineering, operations, and beyond. Fast enough that your ideas don't have to wait.",
+  },
+  methodology: {
+    text: "Fixed price. AI-native delivery. Every engagement ends with your team able to continue without us. That's not a tagline. It's how every project is structured.",
   },
   racingCar: {
     title: "Built for ambitious drivers",
@@ -38,16 +41,17 @@ The Driver    = your team`,
     title: "What we do",
     items: [
       {
+        name: "Performance Audit",
+        badge: "Start here",
+        text: "Not sure where to begin? We look at your project and tell you what we see: what\u2019s slowing you down, what we\u2019d change, and what it would take. A short engagement, fixed price, no commitment beyond that.",
+      },
+      {
         name: "Build",
         text: "You have an idea. We make it real. Fixed price, fast, and when we\u2019re done your team takes over. The project is AI-ready and your people trained alongside us from the start.",
       },
       {
-        name: "Build what fits",
+        name: "Replace Your SaaS",
         text: "Off-the-shelf software often does too much and fits too little. With AI, building a custom tool that matches your exact needs is faster and cheaper than you think. You own it. No per-seat pricing. No vendor lock-in.",
-      },
-      {
-        name: "Performance Audit",
-        text: "Not sure where to start? We look at your project and tell you what we see: what\u2019s slowing you down, what we\u2019d change, and what it would take. A short engagement, fixed price, no commitment beyond that.",
       },
       {
         name: "Team Upgrade",
@@ -86,14 +90,15 @@ The Driver    = your team`,
   },
   whoWeAre: {
     title: "Who we are",
-    p1: "A collective of senior engineers and consultants who share a common approach: AI-native software development. Each of us brings years of experience across different industries, tech stacks, and team structures.",
-    p2: "We come together as a professional unit for each engagement. Small enough to be fast, experienced enough to be trusted with what matters.",
-    p3: "The name is playful. The work is serious. We genuinely enjoy what we do, and that energy shows up in how we deliver.",
+    p1: "We leave teams stronger than we found them. That\u2019s the measure. Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
+    p2: "We\u2019re a collective of senior engineers who come together as a tight unit per engagement. Small enough to be fast. Experienced enough to be trusted with what matters.",
+    p3: "The name is playful. The work is not.",
   },
   cta: {
     title: "Let\u2019s talk",
     text: "Got a project, an idea, or just a question? We\u2019d love to hear about it. No pressure, no pitch. Just a conversation about what\u2019s possible.",
-    email: "hello@performance-dudes.com",
+    action: "Write us. We\u2019ll set up a 30-minute call, listen to what you\u2019re working on, and tell you honestly whether we can help.",
+    email: "hello@performance-dudes.de",
   },
   footer: {
     tagline: "Performance Dudes. We get things done.",

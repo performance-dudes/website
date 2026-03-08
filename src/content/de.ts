@@ -1,7 +1,10 @@
 export const de = {
   hero: {
     title: "Performance Dudes",
-    text: "Wir beschleunigen Softwareentwicklung mit AI. F\u00fcr Teams aus Engineering, Operations und dar\u00fcber hinaus. Wir bauen, modernisieren und machen Projekte zukunftsf\u00e4hig. Schnell, zum Festpreis, und so, dass euer Team danach eigenst\u00e4ndig weiterarbeiten kann.",
+    text: "Die meisten Beratungen verkaufen Zeit. Wir verkaufen Ergebnisse. Festpreis, geliefert in Wochen, und wenn wir gehen, braucht euer Team uns nicht mehr. Wir bauen, modernisieren und machen Softwareprojekte AI-ready. F\u00fcr Teams aus Engineering, Operations und dar\u00fcber hinaus. Schnell genug, damit eure Ideen nicht warten m\u00fcssen.",
+  },
+  methodology: {
+    text: "Festpreis. AI-native Delivery. Jedes Engagement endet damit, dass euer Team ohne uns weiterarbeiten kann. Das ist kein Slogan. So ist jedes Projekt aufgebaut.",
   },
   racingCar: {
     title: "Gebaut f\u00fcr ambitionierte Fahrer",
@@ -38,16 +41,17 @@ Der Fahrer    = euer Team`,
     title: "Was wir tun",
     items: [
       {
+        name: "Performance Audit",
+        badge: "Hier starten",
+        text: "Unsicher, wo anfangen? Wir schauen uns euer Projekt an und sagen euch, was wir sehen: was euch ausbremst, was wir \u00e4ndern w\u00fcrden und was es kosten w\u00fcrde. Ein kurzes Engagement, Festpreis, keine Verpflichtung dar\u00fcber hinaus.",
+      },
+      {
         name: "Bauen",
         text: "Ihr habt eine Idee. Wir setzen sie um. Festpreis, schnell, und danach \u00fcbernimmt euer Team. Das Projekt ist AI-ready und eure Leute waren von Anfang an dabei.",
       },
       {
-        name: "Bauen, was wirklich passt",
+        name: "Replace Your SaaS",
         text: "Standardsoftware kann oft zu viel und passt zu wenig. Mit AI ist es schneller und g\u00fcnstiger als gedacht, ein eigenes Tool zu bauen, das genau zu euren Anforderungen passt. Es geh\u00f6rt euch. Keine Lizenzkosten pro Nutzer. Kein Vendor Lock-in.",
-      },
-      {
-        name: "Performance Audit",
-        text: "Unsicher, wo anfangen? Wir schauen uns euer Projekt an und sagen euch, was wir sehen: was euch ausbremst, was wir \u00e4ndern w\u00fcrden und was es kosten w\u00fcrde. Ein kurzes Engagement, Festpreis, keine Verpflichtung dar\u00fcber hinaus.",
       },
       {
         name: "Team Upgrade",
@@ -86,14 +90,15 @@ Der Fahrer    = euer Team`,
   },
   whoWeAre: {
     title: "Wer wir sind",
-    p1: "Ein Kollektiv erfahrener Engineers und Berater mit einem gemeinsamen Ansatz: AI-native Softwareentwicklung. Jeder von uns bringt jahrelange Erfahrung aus verschiedenen Branchen, Tech-Stacks und Teamstrukturen mit.",
-    p2: "F\u00fcr jedes Engagement kommen wir als professionelle Einheit zusammen. Klein genug, um schnell zu sein. Erfahren genug, um mit dem Wichtigen betraut zu werden.",
-    p3: "Der Name ist verspielt. Die Arbeit ist es nicht. Wir haben ehrlich Spa\u00df an dem, was wir tun, und diese Energie sp\u00fcrt man in dem, was wir liefern.",
+    p1: "Wir hinterlassen Teams st\u00e4rker, als wir sie vorgefunden haben. Das ist der Ma\u00dfstab. Nicht abgerechnete Stunden, nicht gelieferte Folien. Wenn wir gehen, ist euer Team schneller, euer Projekt klarer, und ihr braucht uns nicht, um es am Laufen zu halten.",
+    p2: "Wir sind ein Kollektiv erfahrener Engineers, das sich pro Engagement als feste Einheit zusammenfindet. Klein genug, um schnell zu sein. Erfahren genug, um mit dem Wichtigen betraut zu werden.",
+    p3: "Der Name ist verspielt. Die Arbeit ist es nicht.",
   },
   cta: {
     title: "Lass uns reden",
     text: "Ihr habt ein Projekt, eine Idee oder einfach eine Frage? Wir freuen uns, davon zu h\u00f6ren. Kein Druck, kein Pitch. Einfach ein Gespr\u00e4ch dar\u00fcber, was m\u00f6glich ist.",
-    email: "hello@performance-dudes.com",
+    action: "Schreibt uns. Wir vereinbaren einen 30-Minuten-Call, h\u00f6ren zu und sagen euch ehrlich, ob wir helfen k\u00f6nnen.",
+    email: "hello@performance-dudes.de",
   },
   footer: {
     tagline: "Performance Dudes. We get things done.",

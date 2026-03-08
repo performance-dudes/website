@@ -2,12 +2,13 @@ import Link from "next/link";
 
 type Content = {
   readonly hero: { readonly title: string; readonly text: string };
+  readonly methodology: { readonly text: string };
   readonly racingCar: { readonly title: string; readonly p1: string; readonly p2: string; readonly diagram: string; readonly p3: string };
   readonly beliefs: { readonly title: string; readonly items: readonly { readonly bold: string; readonly text: string }[] };
-  readonly products: { readonly title: string; readonly items: readonly { readonly name: string; readonly text: string }[] };
+  readonly products: { readonly title: string; readonly items: readonly { readonly name: string; readonly text: string; readonly badge?: string }[] };
   readonly howItWorks: { readonly title: string; readonly steps: readonly { readonly bold: string; readonly text: string }[] };
   readonly whoWeAre: { readonly title: string; readonly p1: string; readonly p2: string; readonly p3: string };
-  readonly cta: { readonly title: string; readonly text: string; readonly email: string };
+  readonly cta: { readonly title: string; readonly text: string; readonly action: string; readonly email: string };
   readonly footer: { readonly tagline: string; readonly switchLang: string; readonly switchLangHref: string; readonly imprint: string; readonly imprintHref: string };
 };
 
@@ -17,6 +18,10 @@ export function HomePage({ t }: { t: Content }) {
       <section className="mb-24">
         <h1 className="text-4xl font-bold mb-8">{t.hero.title}</h1>
         <p className="text-xl leading-relaxed">{t.hero.text}</p>
+      </section>
+
+      <section className="mb-24">
+        <p className="text-lg leading-relaxed text-gray-600">{t.methodology.text}</p>
       </section>
 
       <section className="mb-24">
@@ -44,9 +49,14 @@ export function HomePage({ t }: { t: Content }) {
       <section className="mb-24">
         <h2 className="text-2xl font-bold mb-8">{t.products.title}</h2>
         <div className="space-y-12">
-          {t.products.items.map((item) => (
-            <div key={item.name}>
-              <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
+          {t.products.items.map((item, i) => (
+            <div key={item.name} className={i === 0 && item.badge ? "border-l-4 border-gray-900 pl-6" : ""}>
+              <h3 className="text-xl font-semibold mb-2">
+                {item.name}
+                {item.badge && (
+                  <span className="ml-3 text-sm font-medium text-gray-500">{item.badge}</span>
+                )}
+              </h3>
               <p className="text-lg leading-relaxed">{item.text}</p>
             </div>
           ))}
@@ -74,7 +84,8 @@ export function HomePage({ t }: { t: Content }) {
 
       <section className="mb-24">
         <h2 className="text-2xl font-bold mb-4">{t.cta.title}</h2>
-        <p className="text-lg leading-relaxed mb-6">{t.cta.text}</p>
+        <p className="text-lg leading-relaxed mb-4">{t.cta.text}</p>
+        <p className="text-lg leading-relaxed mb-6">{t.cta.action}</p>
         <p className="text-lg">
           <a href={`mailto:${t.cta.email}`} className="underline font-semibold">
             {t.cta.email}
