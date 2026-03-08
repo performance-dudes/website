@@ -32,7 +32,7 @@ export const de = {
       {
         label: "Der Fahrer",
         value: "Euer Team",
-        desc: "Sie besitzen es. Sie fahren es. Ohne uns am Steuer.",
+        desc: "Euer Team besitzt es. Euer Team f\u00e4hrt es. Ohne uns am Steuer.",
       },
     ],
     p3: "Wir sind die Boxencrew. Was wir hinterlassen: eine Codebase, die euer Team versteht, wartet und ohne uns weiterentwickelt.",
@@ -69,7 +69,7 @@ export const de = {
         text: "Unsicher, wo anfangen? Wir schauen uns euer Projekt an und sagen euch, was wir sehen: was euch ausbremst, was wir \u00e4ndern w\u00fcrden und was es kosten w\u00fcrde. Ein kurzes Engagement, Festpreis, keine Verpflichtung dar\u00fcber hinaus.",
       },
       {
-        name: "Bauen",
+        name: "Build",
         text: "Ihr habt eine Idee. Wir machen daraus produktionsreife Software. Schnell, weil AI den Code generiert. Solide, weil erfahrene Architekten entscheiden.",
       },
       {
