@@ -9,11 +9,11 @@ Performance Dudes marketing website. Next.js 15 + TypeScript + Tailwind CSS 4.
 - `src/app/page.tsx` - Home page with all main content
 - `src/app/imprint/page.tsx` - Legal imprint
 - `src/app/layout.tsx` - Root layout and metadata
-- `CONTENT-DECISIONS.md` - Documents all content choices and their rationale
+- `content-decisions/` - Documents all content choices and their rationale
 
 ## Content rules
 
-- All copy must align to brand docs in the orga repo (docs/mission.md, docs/principles.md, etc.)
+- All copy must align to identity and strategy docs in the orga repo
 - Speak about us, not against competitors
 - CEO-readable first, technical second
 - No em dashes. Use periods, commas, or restructure the sentence.
