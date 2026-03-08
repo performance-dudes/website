@@ -35,7 +35,7 @@ export const en = {
         desc: "They own it. They drive it. Without needing us in the seat.",
       },
     ],
-    p3: "We are the pit crew. We come in, build the car, tune the engine, and hand you the keys. Weeks, not months. The car was built for your team.",
+    p3: "We are the pit crew. We come in, build the car, tune the engine, and hand you the keys. Weeks, not months. And when we leave, your team doesn\u2019t need us to keep driving. The car was built for your team.",
   },
   beliefs: {
     title: "What we believe",
@@ -70,7 +70,7 @@ export const en = {
       },
       {
         name: "Build",
-        text: "You have an idea. Your team works alongside us from day one in a codebase structured for AI. Weekly demos of working software, not slides. Fixed price, delivered in weeks.",
+        text: "You have an idea. Your team works alongside us from day one in a codebase structured for AI. Progress shows in working software, not slides. Fixed price, delivered in weeks.",
       },
       {
         name: "Replace Your SaaS",
@@ -86,7 +86,7 @@ export const en = {
       },
       {
         name: "Race Strategy",
-        text: "You have 10 ideas. We work with you in a focused strategy session to find the ones with the biggest leverage. The output: a prioritized, scoped, and sequenced plan you can act on immediately.",
+        text: "You have 10 ideas. We help you find the 3 that actually move the needle, and in what order. Then we build them.",
       },
     ],
   },
@@ -104,11 +104,11 @@ export const en = {
       },
       {
         bold: "We build it.",
-        text: "Your team works alongside us from the start. Weekly demos of working progress. Not slides, not status reports.",
+        text: "Your team works alongside us from the start. Demos of working software, not slides, not status reports.",
       },
       {
         bold: "You own it.",
-        text: "When we are done, the project is yours. AI-ready, documented, tested. And if you have the next idea, we are a conversation away.",
+        text: "When we are done, the project is yours. AI-ready, documented, tested. Your team continues without us. And if you have the next idea, we are a conversation away.",
       },
     ],
   },
@@ -118,6 +118,11 @@ export const en = {
     quote:
       "We leave teams stronger than we found them. That\u2019s the measure.",
     p1: "Not hours billed, not slides delivered. When we go, your team is faster, your project is clearer, and you don\u2019t need us to keep it running.",
+    stats: [
+      { value: "150+", label: "developers enabled on AI tooling" },
+      { value: "34%", label: "efficiency increase measured across enterprise clients" },
+      { value: "8\u00d7", label: "productivity factor with AI in production" },
+    ],
     p2: "We are a collective of senior engineers who come together as a tight unit per engagement. Small enough to be fast. Every one of us has built, scaled, and maintained production systems. Legacy migrations, greenfield projects, AI-native architectures.",
     p3: "The name is playful. The work is not.",
   },

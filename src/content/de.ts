@@ -35,7 +35,7 @@ export const de = {
         desc: "Sie besitzen es. Sie fahren es. Ohne uns am Steuer.",
       },
     ],
-    p3: "Wir sind die Boxencrew. Wir kommen, bauen das Auto, tunen den Motor und geben euch den Schl\u00fcssel. Wochen statt Monate. Das Auto wurde f\u00fcr euch gebaut.",
+    p3: "Wir sind die Boxencrew. Wir kommen, bauen das Auto, tunen den Motor und geben euch den Schl\u00fcssel. Wochen statt Monate. Und wenn wir gehen, braucht euer Team uns nicht mehr am Steuer. Das Auto wurde f\u00fcr euch gebaut.",
   },
   beliefs: {
     title: "Woran wir glauben",
@@ -70,7 +70,7 @@ export const de = {
       },
       {
         name: "Bauen",
-        text: "Ihr habt eine Idee. Euer Team arbeitet von Tag eins mit uns in einer Codebase, die f\u00fcr AI gebaut ist. W\u00f6chentliche Demos von funktionierender Software, nicht Folien. Festpreis, geliefert in Wochen.",
+        text: "Ihr habt eine Idee. Euer Team arbeitet von Tag eins mit uns in einer Codebase, die f\u00fcr AI gebaut ist. Fortschritt zeigt sich in laufender Software, nicht in Folien. Festpreis, geliefert in Wochen.",
       },
       {
         name: "Replace Your SaaS",
@@ -86,7 +86,7 @@ export const de = {
       },
       {
         name: "Race Strategy",
-        text: "Ihr habt 10 Ideen. Wir arbeiten mit euch in einer fokussierten Strategy Session heraus, welche davon den gr\u00f6\u00dften Hebel haben. Das Ergebnis: ein priorisierter, geschnittener und sequenzierter Plan, den ihr sofort umsetzen k\u00f6nnt.",
+        text: "Ihr habt 10 Ideen. Wir helfen euch, die 3 zu finden, die wirklich etwas bewegen, und in welcher Reihenfolge. Dann bauen wir sie.",
       },
     ],
   },
@@ -104,11 +104,11 @@ export const de = {
       },
       {
         bold: "Wir bauen es.",
-        text: "Euer Team arbeitet von Anfang an mit uns. W\u00f6chentliche Demos von funktionierendem Fortschritt. Keine Folien, keine Statusberichte.",
+        text: "Euer Team arbeitet von Anfang an mit uns. Demos von laufender Software, keine Folien, keine Statusberichte.",
       },
       {
         bold: "Es geh\u00f6rt euch.",
-        text: "Wenn wir fertig sind, geh\u00f6rt das Projekt euch. AI-ready, dokumentiert, getestet. Und wenn die n\u00e4chste Idee kommt, sind wir nur ein Gespr\u00e4ch entfernt.",
+        text: "Wenn wir fertig sind, geh\u00f6rt das Projekt euch. AI-ready, dokumentiert, getestet. Euer Team macht ohne uns weiter. Und wenn die n\u00e4chste Idee kommt, sind wir nur ein Gespr\u00e4ch entfernt.",
       },
     ],
   },
@@ -118,6 +118,11 @@ export const de = {
     quote:
       "Wir hinterlassen Teams st\u00e4rker, als wir sie vorgefunden haben. Das ist der Ma\u00dfstab.",
     p1: "Nicht abgerechnete Stunden, nicht gelieferte Folien. Wenn wir gehen, ist euer Team schneller, euer Projekt klarer, und ihr braucht uns nicht, um es am Laufen zu halten.",
+    stats: [
+      { value: "150+", label: "Entwickler auf AI-Tooling umgestellt" },
+      { value: "34%", label: "Effizienzsteigerung bei Enterprise-Kunden gemessen" },
+      { value: "8×", label: "Produktivitätsfaktor mit AI in der Praxis" },
+    ],
     p2: "Wir sind ein Kollektiv erfahrener Engineers, das sich pro Engagement als feste Einheit zusammenfindet. Klein genug, um schnell zu sein. Jeder von uns hat Produktionssysteme gebaut, skaliert und gewartet. Legacy-Migrationen, Greenfield-Projekte, AI-native Architekturen.",
     p3: "Der Name ist verspielt. Die Arbeit ist es nicht.",
   },
