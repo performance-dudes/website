@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomeDe() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
@@ -200,7 +202,7 @@ Der Fahrer    = euer Team`}
       <footer className="border-t border-gray-200 pt-8 text-gray-400 text-sm flex justify-between">
         <span>Performance Dudes. We get things done.</span>
         <div className="space-x-4">
-          <a href="/" className="hover:text-gray-600">English</a>
+          <Link href="/" className="hover:text-gray-600">English</Link>
           <a href="/impressum" className="hover:text-gray-600">Impressum</a>
         </div>
       </footer>

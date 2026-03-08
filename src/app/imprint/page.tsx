@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Imprint() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
@@ -90,9 +92,9 @@ export default function Imprint() {
       </section>
 
       <footer className="border-t border-gray-200 pt-8 mt-16">
-        <a href="/" className="text-gray-400 text-sm hover:text-gray-600">
+        <Link href="/" className="text-gray-400 text-sm hover:text-gray-600">
           &larr; Back to home
-        </a>
+        </Link>
       </footer>
     </main>
   );
