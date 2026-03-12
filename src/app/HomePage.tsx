@@ -167,7 +167,7 @@ export function HomePage({ t }: { t: Content }) {
           <div className="speed-lines" aria-hidden="true" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/hero-a.webp"
+            src="/website/hero-a.webp"
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
