@@ -144,9 +144,10 @@ export function HomePage({ t }: { t: Content }) {
             </a>
             <a
               href={`mailto:${t.cta.email}`}
-              className="inline-flex items-center justify-center min-h-[48px] px-5 bg-[#EA580C] text-white font-semibold text-sm rounded tracking-wide transition-all duration-200 hover:bg-[#C94D0A] hover:-translate-y-px whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 min-h-[48px] px-5 bg-[#EA580C] text-white font-semibold text-sm rounded tracking-wide transition-all duration-200 hover:bg-[#C94D0A] hover:-translate-y-px whitespace-nowrap"
             >
-              {t.cta.email}
+              <EnvelopeIcon size={16} />
+              <span className="hidden sm:inline">{t.cta.email}</span>
             </a>
           </div>
         </nav>
