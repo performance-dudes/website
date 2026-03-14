@@ -18,13 +18,12 @@ Opens at http://localhost:3000
 
 ## Deployment
 
-Deployed to GitHub Pages at `performance-dudes.github.io/website/` on every push to main.
-
-The `performance-dudes.de` domain redirects here (configured via DNS registrar).
+Deployed to GitHub Pages at [performance-dudes.de](https://performance-dudes.de) on every push to main.
 
 ### Required setup
 
 - GitHub Pages enabled on this repo (source: GitHub Actions)
+- Custom domain `performance-dudes.de` configured in repo settings and DNS
 
 ## Structure
 
