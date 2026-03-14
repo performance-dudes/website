@@ -171,6 +171,7 @@ export function HomePage({ t }: { t: Content }) {
             src="/hero-a.webp"
             alt=""
             aria-hidden="true"
+            fetchPriority="high"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             style={{ opacity: 0.25, mixBlendMode: "lighten", zIndex: 0 }}
           />
