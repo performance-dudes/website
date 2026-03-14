@@ -18,32 +18,13 @@ Opens at http://localhost:3000
 
 ## Deployment
 
-Two environments, both served via GitHub Pages:
+Deployed to GitHub Pages at `performance-dudes.github.io/website/` on every push to main.
 
-| Environment | URL | Repo | Trigger |
-|---|---|---|---|
-| Staging | `performance-dudes.github.io/website` | this repo | push to main |
-| Production | `performance-dudes.de` | `performance-dudes.github.io` | git tag `v*` |
-
-### How it works
-
-1. **Push to main** runs lint + build with `basePath: "/website"` and deploys to staging automatically.
-2. **Tagging a release** triggers a second build without basePath and pushes directly to the [prod repo](https://github.com/performance-dudes/performance-dudes.github.io) main branch.
-
-The `basePath` is controlled via the `NEXT_PUBLIC_BASE_PATH` env var. It defaults to `/website` (staging). The prod build sets it to `""`.
-
-### Releasing to production
-
-```
-git tag v1.0.0
-git push origin v1.0.0
-```
+The `performance-dudes.de` domain redirects here (configured via DNS registrar).
 
 ### Required setup
 
-- `PROD_DEPLOY_KEY` secret in this repo: private key of an SSH deploy key with write access on the prod repo
-- GitHub Pages enabled in both repos (this repo: workflow-based, prod repo: deploy from branch main)
-- DNS A records for `performance-dudes.de` pointing to GitHub Pages IPs
+- GitHub Pages enabled on this repo (source: GitHub Actions)
 
 ## Structure
 
