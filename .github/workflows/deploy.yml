@@ -64,25 +64,31 @@ jobs:
       - uses: actions/deploy-pages@v4
         id: deployment
 
-  create-prod-pr:
+  deploy-prod:
     if: startsWith(github.ref, 'refs/tags/v')
     needs: build-and-lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          repository: performance-dudes/performance-dudes.github.io
-          token: ${{ secrets.PROD_DEPLOY_TOKEN }}
-          path: prod-repo
-
       - uses: actions/download-artifact@v4
         with:
           name: prod-build
           path: prod-build
 
-      - name: Update prod repo content
+      - name: Deploy to production
+        env:
+          DEPLOY_KEY: ${{ secrets.PROD_DEPLOY_KEY }}
         run: |
+          # Setup SSH with deploy key
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes"
+
+          # Clone prod repo
+          git clone git@github.com:performance-dudes/performance-dudes.github.io.git prod-repo
           cd prod-repo
+
           # Remove everything except git and CNAME
           find . -maxdepth 1 -not -name '.git' -not -name 'CNAME' -not -name '.' | xargs rm -rf
           # Copy new build output
@@ -90,15 +96,9 @@ jobs:
           # Ensure CNAME stays
           echo "performance-dudes.de" > CNAME
 
-      - name: Create PR
-        run: |
-          cd prod-repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          TAG="${GITHUB_REF#refs/tags/}"
-          BRANCH="deploy/${TAG}"
-          git checkout -b "$BRANCH"
           git add -A
 
           if git diff --staged --quiet; then
@@ -106,14 +106,6 @@ jobs:
             exit 0
           fi
 
+          TAG="${GITHUB_REF#refs/tags/}"
           git commit -m "deploy: ${TAG} from website"
-          git push origin "$BRANCH"
-
-          PR_URL=$(gh pr create \
-            --repo performance-dudes/performance-dudes.github.io \
-            --title "deploy: ${TAG}" \
-            --body "Automated production deployment from [website ${TAG}](https://github.com/performance-dudes/website/releases/tag/${TAG}).")
-
-          gh pr merge "$PR_URL" --auto --merge
-        env:
-          GH_TOKEN: ${{ secrets.PROD_DEPLOY_TOKEN }}
+          git push origin main
