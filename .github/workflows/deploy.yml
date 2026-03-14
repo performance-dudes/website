@@ -109,9 +109,11 @@ jobs:
           git commit -m "deploy: ${TAG} from website"
           git push origin "$BRANCH"
 
-          gh pr create \
+          PR_URL=$(gh pr create \
             --repo performance-dudes/performance-dudes.github.io \
             --title "deploy: ${TAG}" \
-            --body "Automated production deployment from [website ${TAG}](https://github.com/performance-dudes/website/releases/tag/${TAG})."
+            --body "Automated production deployment from [website ${TAG}](https://github.com/performance-dudes/website/releases/tag/${TAG}).")
+
+          gh pr merge "$PR_URL" --auto --merge
         env:
           GH_TOKEN: ${{ secrets.PROD_DEPLOY_TOKEN }}
