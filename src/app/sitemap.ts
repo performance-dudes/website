@@ -20,17 +20,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { de: base } },
     },
-    {
-      url: `${base}/imprint`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.1,
-    },
-    {
-      url: `${base}/en/imprint`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.1,
-    },
   ];
 }

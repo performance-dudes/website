@@ -18,12 +18,11 @@ Opens at http://localhost:3000
 
 ## Deployment
 
-Deployed to GitHub Pages at [performance-dudes.de](https://performance-dudes.de) on every push to main.
+Deployed to [Cloudflare Pages](https://dash.cloudflare.com/) at [performance-dudes.de](https://performance-dudes.de).
 
-### Required setup
-
-- GitHub Pages enabled on this repo (source: GitHub Actions)
-- Custom domain `performance-dudes.de` configured in repo settings and DNS
+- **Production**: Every push to `main` deploys to `performance-dudes.de`
+- **Preview**: Every branch push gets a preview URL (`<branch>.website-d8g.pages.dev`)
+- **CI**: GitHub Actions runs lint + build on pull requests
 
 ## Structure
 
