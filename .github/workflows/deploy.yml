@@ -1,8 +1,9 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
     branches: [main]
+    tags: ["v*"]
   pull_request:
     branches: [main]
 
@@ -16,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,6 +29,8 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
+
+      # Staging build (with basePath /website)
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
@@ -35,9 +38,24 @@ jobs:
         with:
           path: out
 
-  deploy:
+      # Prod build (without basePath) — only on tag
+      - name: Build for production
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          rm -rf out .next
+          npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ""
+
+      - uses: actions/upload-artifact@v4
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          name: prod-build
+          path: out
+
+  deploy-staging:
     if: github.ref == 'refs/heads/main'
-    needs: build
+    needs: build-and-lint
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -45,3 +63,55 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
+
+  create-prod-pr:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build-and-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: performance-dudes/performance-dudes.github.io
+          token: ${{ secrets.PROD_DEPLOY_TOKEN }}
+          path: prod-repo
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: prod-build
+          path: prod-build
+
+      - name: Update prod repo content
+        run: |
+          cd prod-repo
+          # Remove everything except git and CNAME
+          find . -maxdepth 1 -not -name '.git' -not -name 'CNAME' -not -name '.' | xargs rm -rf
+          # Copy new build output
+          cp -r ../prod-build/* .
+          # Ensure CNAME stays
+          echo "performance-dudes.de" > CNAME
+
+      - name: Create PR
+        run: |
+          cd prod-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          TAG="${GITHUB_REF#refs/tags/}"
+          BRANCH="deploy/${TAG}"
+          git checkout -b "$BRANCH"
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "No changes to deploy"
+            exit 0
+          fi
+
+          git commit -m "deploy: ${TAG} from website"
+          git push origin "$BRANCH"
+
+          gh pr create \
+            --repo performance-dudes/performance-dudes.github.io \
+            --title "deploy: ${TAG}" \
+            --body "Automated production deployment from [website ${TAG}](https://github.com/performance-dudes/website/releases/tag/${TAG})."
+        env:
+          GH_TOKEN: ${{ secrets.PROD_DEPLOY_TOKEN }}
