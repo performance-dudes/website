@@ -1,5 +1,0 @@
-# Cloudflare Pages Redirects
-# performance-dudes.de
-
-# www redirect
-https://www.performance-dudes.de/* https://performance-dudes.de/:splat 301
