@@ -137,6 +137,105 @@ export const en = {
     imprintHref: "/en/imprint",
     shareLinkedIn: "Share on LinkedIn",
   },
+  vibeEngineering: {
+    hero: {
+      eyebrow: "AI-Native Software Engineering \u00b7 Practice",
+      title: "Vibe Engineering",
+      tagline: "Not prompting. Orchestrating.",
+      lead: "Vibe Engineering is the discipline of steering AI to produce exactly what you envision. Not something that merely works. The specific outcome you had in mind.",
+    },
+    moves: {
+      sectionLabel: "The Discipline",
+      title: "Four Moves",
+      intro: "AI becomes an engineering tool only when these four moves are in place. Individually, in sequence, and in loops.",
+      items: [
+        {
+          title: "Precision of Intent",
+          body: "State the goal precisely before the AI runs. Vague intent produces output that is fast but at the wrong target. If you cannot describe the end state in a sentence, the work is not yet defined enough to start.",
+        },
+        {
+          title: "Complete Context",
+          body: "Everything the AI needs to make good decisions belongs in the project. Tests, constraints, conventions, prior decisions. What the AI does not see, it works around. Tribal knowledge stays invisible.",
+        },
+        {
+          title: "Decomposition",
+          body: "Break large work into provable phases. Each phase has a concrete output and a check that confirms completion. Without decomposition, verification has nothing to verify against.",
+        },
+        {
+          title: "Verification",
+          body: "Do not believe the AI output. Prove it. Automated tests, type checkers, quality gates that close the loop without manual inspection. If it cannot be proven, it cannot ship.",
+        },
+      ],
+    },
+    loop: {
+      sectionLabel: "How the four interlock",
+      title: "One pass, many loops",
+      body: "The sequence is one full pass. The loop runs many times across a project. Inside a phase, Precision and Context get refined as AI output surfaces new constraints. The Verification of one phase often becomes the Context of the next.",
+      srDescription: "Diagram of four sequential nodes: Precision of Intent, Complete Context, Decomposition, Verification. Arrows connect each node to the next. A return arrow from Verification back to Precision of Intent closes the loop.",
+      nodes: [
+        { short: "Precision", full: "Precision of Intent" },
+        { short: "Context", full: "Complete Context" },
+        { short: "Decomposition", full: "Decomposition" },
+        { short: "Verification", full: "Verification" },
+      ],
+    },
+    dimensions: {
+      sectionLabel: "Skill Progression",
+      title: "Seven Dimensions",
+      intro: "The four moves break down into seven measurable dimensions. Three are foundational and non-negotiable. Four unlock progressively once the foundational three run reliably.",
+      groups: [
+        {
+          label: "Foundational",
+          sublabel: "Without these three, useful output is luck, not engineering",
+          rows: [
+            { pillar: "Precision of Intent", dimension: "Intent Clarity", measures: "Precise goal description \u2014 the AI knows exactly what to do" },
+            { pillar: "Complete Context", dimension: "Contextual Grounding", measures: "Task anchored in real context: stack, errors, constraints" },
+            { pillar: "Verification", dimension: "Verification Strategy", measures: "Defines what correct output looks like before the AI runs" },
+          ],
+        },
+        {
+          label: "Progressive",
+          sublabel: "Unlock once the foundations are stable",
+          rows: [
+            { pillar: "Intermediate+", dimension: "Technical Leverage", measures: "Concrete tools, frameworks, CLI commands applied deliberately" },
+            { pillar: "Intermediate+", dimension: "Constraint Definition", measures: "Explicit limits: scope, compatibility, exclusions stated upfront" },
+            { pillar: "Advanced", dimension: "Decomposition Structure", measures: "Work broken into ordered phases with rollback points" },
+            { pillar: "Advanced", dimension: "Risk Resilience", measures: "Failure modes, edge cases, graceful degradation anticipated in advance" },
+          ],
+        },
+      ],
+      columns: { pillar: "Pillar / Tier", dimension: "Dimension", measures: "What it measures" },
+    },
+    comparison: {
+      sectionLabel: "Clarification",
+      title: "Vibe Coding \u2260 Vibe Engineering",
+      intro: "The term vibe coding is out there. To avoid confusion: these are two different tools for two different purposes. Vibe coding is not wrong. It is just different.",
+      columns: { axis: "Axis", vibeCoding: "Vibe Coding", vibeEngineering: "Vibe Engineering" },
+      rows: [
+        { axis: "Intent", vibeCoding: "Intuitive, exploratory", vibeEngineering: "Stated upfront, precise" },
+        { axis: "Context", vibeCoding: "Whatever is in the chat", vibeEngineering: "Whatever the project knows" },
+        { axis: "Progress", vibeCoding: "One attempt at a time", vibeEngineering: "Phases with a checkpoint" },
+        { axis: "Handling output", vibeCoding: "\u201cLooks good to me\u201d", vibeEngineering: "Proven or not shipped" },
+      ],
+      closing: "Vibe coding fits prototypes, playgrounds, and learning. Vibe engineering fits software that goes to production.",
+    },
+    cta: {
+      sectionLabel: "Next",
+      title: "Vibe Engineering is a skill",
+      lead: "Like playing violin. The first notes don\u2019t sound right. It can be practiced.",
+      text: "Want to apply it in your team? Let\u2019s talk. A conversation about how to get your project AI-ready.",
+      email: "hello@performance-dudes.de",
+    },
+    footer: {
+      tagline: "Performance Dudes. We get things done.",
+      switchLang: "Deutsch",
+      switchLangHref: "/vibe-engineering",
+      imprint: "Imprint",
+      imprintHref: "/en/imprint",
+      shareLinkedIn: "Share on LinkedIn",
+      shareHref: "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fperformance-dudes.de%2Fen%2Fvibe-engineering",
+    },
+  },
   imprintPage: {
     title: "Imprint",
     backLink: "\u2190 Back to home",

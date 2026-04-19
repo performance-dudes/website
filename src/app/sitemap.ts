@@ -21,6 +21,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { de: base } },
     },
     {
+      url: `${base}/vibe-engineering`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: { en: `${base}/en/vibe-engineering` } },
+    },
+    {
+      url: `${base}/en/vibe-engineering`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: { de: `${base}/vibe-engineering` } },
+    },
+    {
       url: `${base}/imprint`,
       lastModified,
       changeFrequency: "yearly",
