@@ -27,11 +27,11 @@ The move titles stay in English in both locales. They are names used externally 
 - No origin story or "where it came from" section. The concept stands on its own merits.
 - No header navigation entry. The page is discovered via direct link and one contextual cross-link from the homepage body copy.
 
-## CTA handoff to VibeSkills
+## CTA
 
-The primary CTA is a link to VibeSkills (`vibeskills.eu`). VibeSkills is a PD product currently in build-up, not an external partner, so the link does not violate the "email-only CTA" brand rule; it is an internal product reference. A secondary text link preserves the existing `hello@performance-dudes.de` path for visitors who want to engage PD directly rather than train themselves.
+The CTA mirrors the homepage pattern: a single orange button that opens a `mailto:hello@performance-dudes.de` link. No external links, no secondary paths.
 
-If VibeSkills later becomes a headline product on the homepage, this page becomes one of its primary funnels. Until then, the page carries the product's only public reference from the main PD site.
+An earlier draft handed the primary CTA off to VibeSkills (`vibeskills.eu`), a PD training product in build-up. That was dropped because the product is not yet ready to carry public traffic from the main PD site. When VibeSkills is production-ready, this page is the natural funnel to update; until then, email remains the single path and the brand's CTA rule holds without exception.
 
 ## URL and language handling
 

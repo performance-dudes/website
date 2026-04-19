@@ -12,7 +12,7 @@ A dedicated pillar page at `/vibe-engineering` (DE) and `/en/vibe-engineering` (
 - **Positioning / Credibility Signal** — we have a clear point of view on how AI is used in engineering
 - **Definition-of-Record** — a stable, referenceable URL for use in proposals, LinkedIn posts, email signatures, keynote slides
 
-The page is intentionally not a sales funnel. A single call-to-action hands off to the VibeSkills product (a PD training product currently in build-up); a secondary email link remains available for engagement inquiries.
+The page is intentionally not a sales funnel. The CTA is a single email button to `hello@performance-dudes.de`, matching the homepage pattern. An earlier draft pointed to VibeSkills as the primary action, but the product is not yet ready to carry public traffic; we kept email-only until it is.
 
 ## Non-goals
 
@@ -91,8 +91,8 @@ Six sections in order, matching the existing site's section rhythm (alternating 
 - Section label: `WEITER` / `NEXT`
 - H2: `Vibe Engineering ist eine Fähigkeit` / `Vibe Engineering is a skill`
 - Lead (1–2 sentences): like playing violin, the first notes don't sound right, it can be practiced
-- Primary button (orange, filled): `Vibe Engineering lernen → vibeskills.eu` / `Learn Vibe Engineering → vibeskills.eu` (`target="_blank"` + `rel="noopener"`)
-- Secondary link (silver, text-only): `Mit uns anwenden → hello@performance-dudes.de` / `Apply with us → hello@performance-dudes.de`
+- Soft follow-up line inviting a conversation about applying Vibe Engineering in the reader's team
+- Single orange email button to `hello@performance-dudes.de`, matching the homepage CTA pattern exactly
 
 ### Footer
 
@@ -124,7 +124,7 @@ vibeEngineering: {
   loop: { sectionLabel, title, body, srDescription },
   dimensions: { sectionLabel, title, intro, foundationalLabel, progressiveLabel, columns, rows: [{ pillar, dimension, measures, tier? }, ...] },
   comparison: { sectionLabel, title, intro, columns, rows: [{ axis, vibeCoding, vibeEngineering }, ...], closing },
-  cta: { sectionLabel, title, lead, primaryLabel, primaryHref, secondaryLabel, secondaryHref },
+  cta: { sectionLabel, title, lead, text, email },
   footer: { switchLangHref }, // "/en/vibe-engineering" on DE, "/vibe-engineering" on EN
 }
 ```
@@ -186,8 +186,7 @@ All copy must adhere to the existing `website/CLAUDE.md` and the `brand-uix` ski
 3. Language switcher on each page swaps to the correct counterpart
 4. Sitemap includes both new URLs with correct hreflang alternates
 5. Loop SVG has a screen-reader-accessible text alternative
-6. Primary CTA button opens `vibeskills.eu` in a new tab with `rel="noopener"`
-7. Secondary CTA opens a `mailto:hello@performance-dudes.de` link
+6. CTA button opens a `mailto:hello@performance-dudes.de` link (no external CTAs until VibeSkills is production-ready)
 8. Mobile layout (320px width) has no overflow, tables scroll horizontally if needed, cards stack to one column
 9. No em-dashes anywhere in the new copy
 10. Homepage adds exactly one contextual text link to `/vibe-engineering`

@@ -76,12 +76,8 @@ export type VibeEngineeringContent = {
     readonly sectionLabel: string;
     readonly title: string;
     readonly lead: string;
-    readonly primaryLabel: string;
-    readonly primaryHref: string;
-    readonly primaryHint: string;
-    readonly secondaryLabel: string;
-    readonly secondaryHref: string;
-    readonly secondaryHint: string;
+    readonly text: string;
+    readonly email: string;
   };
   readonly footer: {
     readonly tagline: string;
@@ -128,25 +124,6 @@ function EnvelopeIcon({ size = 18 }: { size?: number }) {
     >
       <rect x="2" y="4" width="20" height="16" rx="2" />
       <path d="M2 7l10 7 10-7" />
-    </svg>
-  );
-}
-
-function ExternalIcon({ size = 16 }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="M7 17L17 7" />
-      <path d="M8 7h9v9" />
     </svg>
   );
 }
@@ -623,28 +600,19 @@ export function VibeEngineeringPage({ t }: { t: VibeEngineeringContent }) {
               >
                 {t.cta.title}
               </h2>
-              <p className="text-[1.1rem] text-[#CBD5E1] max-w-[560px] mx-auto mb-10 leading-[1.7]">
+              <p className="text-[1.1rem] text-[#CBD5E1] max-w-[560px] mx-auto mb-4 leading-[1.7]">
                 {t.cta.lead}
               </p>
-              <div className="flex flex-col items-center gap-4">
-                <a
-                  href={t.cta.primaryHref}
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex items-center justify-center gap-2 min-h-[56px] px-9 bg-[#EA580C] text-white font-bold text-[1.05rem] rounded tracking-wide transition-all duration-200 hover:bg-[#C94D0A] hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(234,88,12,0.4)]"
-                >
-                  {t.cta.primaryLabel}
-                  <ExternalIcon size={18} />
-                </a>
-                <a
-                  href={t.cta.secondaryHref}
-                  className="inline-flex items-center gap-2 text-[0.95rem] text-[#C0C0C8] hover:text-[#F1F5F9] transition-colors duration-200 underline underline-offset-4 decoration-[#C0C0C8]/40"
-                >
-                  <EnvelopeIcon size={14} />
-                  {t.cta.secondaryLabel}
-                  <span className="text-[#C0C0C8]/70">{t.cta.secondaryHint}</span>
-                </a>
-              </div>
+              <p className="text-base text-[#C0C0C8] max-w-[520px] mx-auto mb-10 leading-[1.7]">
+                {t.cta.text}
+              </p>
+              <a
+                href={`mailto:${t.cta.email}`}
+                className="inline-flex items-center justify-center gap-2 min-h-[56px] px-9 bg-[#EA580C] text-white font-bold text-[1.05rem] rounded tracking-wide transition-all duration-200 hover:bg-[#C94D0A] hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(234,88,12,0.4)]"
+              >
+                <EnvelopeIcon size={20} />
+                {t.cta.email}
+              </a>
             </div>
           </div>
         </section>
