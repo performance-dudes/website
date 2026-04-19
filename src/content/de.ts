@@ -137,6 +137,109 @@ export const de = {
     imprintHref: "/imprint",
     shareLinkedIn: "Auf LinkedIn teilen",
   },
+  vibeEngineering: {
+    hero: {
+      eyebrow: "AI-Native Software Engineering \u00b7 Praxis",
+      title: "Vibe Engineering",
+      tagline: "Not prompting. Orchestrating.",
+      lead: "Vibe Engineering ist die Disziplin, AI so zu steuern, dass sie genau das produziert, was du vor Augen hast. Nicht irgendetwas, das funktioniert. Sondern das konkrete Ergebnis, das du meinst.",
+    },
+    moves: {
+      sectionLabel: "Die Disziplin",
+      title: "Vier Bewegungen",
+      intro: "AI wird erst dann zum Engineering-Werkzeug, wenn diese vier Bewegungen sitzen. Einzeln, in Reihenfolge, und im Loop.",
+      items: [
+        {
+          title: "Precision of Intent",
+          body: "Das Ziel pr\u00e4zise formulieren, bevor die AI losl\u00e4uft. Vage Absicht erzeugt AI-Output, der schnell ist, aber am falschen Ziel. Wer das Ergebnis nicht in einem Satz beschreiben kann, ist noch nicht bereit anzufangen.",
+        },
+        {
+          title: "Complete Context",
+          body: "Alles, was die AI f\u00fcr gute Entscheidungen braucht, geh\u00f6rt ins Projekt. Tests, Constraints, Konventionen, fr\u00fchere Entscheidungen. Was die AI nicht sieht, l\u00e4sst sie weg. Tribal Knowledge bleibt unsichtbar.",
+        },
+        {
+          title: "Decomposition",
+          body: "Gro\u00dfe Arbeit in beweisbare Phasen zerlegen. Jede Phase mit konkretem Output und einem Kriterium, das Fertigstellung zeigt. Ohne Zerlegung hat Verifikation nichts, woran sie pr\u00fcfen kann.",
+        },
+        {
+          title: "Verification",
+          body: "Dem AI-Output nicht glauben. Ihn beweisen. Automatisierte Tests, Type-Checker, Quality Gates, die den Kreis ohne manuelle Inspektion schlie\u00dfen. Was sich nicht beweisen l\u00e4sst, geht nicht in Produktion.",
+        },
+      ],
+    },
+    loop: {
+      sectionLabel: "Wie die Vier ineinandergreifen",
+      title: "Ein Durchlauf, viele Runden",
+      body: "Die Reihenfolge ist ein voller Durchlauf. Der Loop dreht sich oft mehrfach innerhalb eines Projekts. Innerhalb einer Phase werden Precision und Context nachgesch\u00e4rft, sobald AI-Output neue Constraints sichtbar macht. Die Verifikation einer Phase wird oft zum Kontext der n\u00e4chsten.",
+      srDescription: "Diagramm mit vier sequenziellen Knoten: Precision of Intent, Complete Context, Decomposition, Verification. Pfeile verbinden die Knoten in Reihenfolge. Ein R\u00fcckf\u00fchrungspfeil von Verification zur\u00fcck zu Precision of Intent bildet den Loop.",
+      nodes: [
+        { short: "Precision", full: "Precision of Intent" },
+        { short: "Context", full: "Complete Context" },
+        { short: "Decomposition", full: "Decomposition" },
+        { short: "Verification", full: "Verification" },
+      ],
+    },
+    dimensions: {
+      sectionLabel: "Skill-Progression",
+      title: "Sieben Dimensionen",
+      intro: "Die vier Bewegungen zerlegen sich in sieben messbare Dimensionen. Drei sind fundamental und nicht verhandelbar. Vier kommen stufenweise dazu, wenn die ersten drei stabil laufen.",
+      groups: [
+        {
+          label: "Fundamental",
+          sublabel: "Ohne diese drei ist guter Output Gl\u00fcck, kein Engineering",
+          rows: [
+            { pillar: "Precision of Intent", dimension: "Intent Clarity", measures: "Pr\u00e4zise Zielbeschreibung \u2014 die AI wei\u00df genau, was zu tun ist" },
+            { pillar: "Complete Context", dimension: "Contextual Grounding", measures: "Aufgabe verankert in echtem Kontext: Stack, Fehler, Constraints" },
+            { pillar: "Verification", dimension: "Verification Strategy", measures: "Definiert vor dem Lauf, wie korrekter Output aussieht" },
+          ],
+        },
+        {
+          label: "Aufbauend",
+          sublabel: "Werden wirksam, sobald die Fundamente stehen",
+          rows: [
+            { pillar: "Intermediate+", dimension: "Technical Leverage", measures: "Konkrete Tools, Frameworks, CLI-Kommandos bewusst eingesetzt" },
+            { pillar: "Intermediate+", dimension: "Constraint Definition", measures: "Explizite Grenzen: Scope, Kompatibilit\u00e4t, Ausschl\u00fcsse vorab benannt" },
+            { pillar: "Advanced", dimension: "Decomposition Structure", measures: "Arbeit in geordnete Phasen mit R\u00fcckfallpunkten zerlegt" },
+            { pillar: "Advanced", dimension: "Risk Resilience", measures: "Fehlermodi, Edge Cases, kontrollierter R\u00fcckfall vorab bedacht" },
+          ],
+        },
+      ],
+      columns: { pillar: "Pfeiler / Stufe", dimension: "Dimension", measures: "Was sie misst" },
+    },
+    comparison: {
+      sectionLabel: "Klarstellung",
+      title: "Vibe Coding \u2260 Vibe Engineering",
+      intro: "Der Begriff Vibe Coding kursiert. Damit keine Verwechslung entsteht: das sind zwei verschiedene Werkzeuge f\u00fcr zwei verschiedene Zwecke. Vibe Coding ist nicht falsch. Nur anders.",
+      columns: { axis: "Achse", vibeCoding: "Vibe Coding", vibeEngineering: "Vibe Engineering" },
+      rows: [
+        { axis: "Absicht", vibeCoding: "Intuitiv getippt, erkundend", vibeEngineering: "Vorab formuliert, pr\u00e4zise" },
+        { axis: "Kontext", vibeCoding: "Was im Chat steht", vibeEngineering: "Alles, was das Projekt wei\u00df" },
+        { axis: "Fortschritt", vibeCoding: "Ein Wurf auf einmal", vibeEngineering: "Phasen mit Pr\u00fcfpunkt" },
+        { axis: "Umgang mit Output", vibeCoding: "\u201eSieht gut aus\u201c", vibeEngineering: "Bewiesen oder nicht geliefert" },
+      ],
+      closing: "Vibe Coding passt zum Prototyp, zur Spielwiese, zum Lernen. Vibe Engineering passt, wenn Software in Produktion laufen soll.",
+    },
+    cta: {
+      sectionLabel: "Weiter",
+      title: "Vibe Engineering ist eine F\u00e4higkeit",
+      lead: "Wie Geige spielen. Die ersten T\u00f6ne klingen nicht richtig. \u00dcben kann man.",
+      primaryLabel: "Vibe Engineering lernen",
+      primaryHref: "https://vibeskills.eu/",
+      primaryHint: "vibeskills.eu",
+      secondaryLabel: "Mit uns anwenden",
+      secondaryHref: "mailto:hello@performance-dudes.de",
+      secondaryHint: "hello@performance-dudes.de",
+    },
+    footer: {
+      tagline: "Performance Dudes. We get things done.",
+      switchLang: "English",
+      switchLangHref: "/en/vibe-engineering",
+      imprint: "Impressum",
+      imprintHref: "/impressum",
+      shareLinkedIn: "Auf LinkedIn teilen",
+      shareHref: "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fperformance-dudes.de%2Fvibe-engineering",
+    },
+  },
   imprintPage: {
     title: "Impressum",
     backLink: "\u2190 Zur\u00fcck zur Startseite",
