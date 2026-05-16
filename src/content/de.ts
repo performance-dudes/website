@@ -168,4 +168,151 @@ export const de = {
       },
     ],
   },
+  kalkulator: {
+    meta: {
+      title: "Team-Output-Kalkulator | Performance Dudes",
+      description:
+        "Gebt euren Engpass ein, setzt euer Investment und seht sofort: welchen Output euer Team nach 12 Monaten liefert, welche Vorteile sich wann einstellen und wie sich das Feature-zu-Bug-Verhältnis verschiebt.",
+    },
+    painPoints: {
+      heading: "Was bremst euer Entwicklungsteam am meisten?",
+      items: [
+        {
+          id: "shipping-zu-langsam",
+          label: "Shipping zu langsam",
+          description: "Features kommen nicht schnell genug.",
+        },
+        {
+          id: "bug-last",
+          label: "Bug-Last",
+          description: "Hotfixes dominieren das Tagesgeschäft.",
+        },
+        {
+          id: "releases-stress",
+          label: "Releases sind Stress",
+          description: "Keine Planbarkeit.",
+        },
+        {
+          id: "bus-faktor",
+          label: "Bus-Faktor",
+          description: "Eine Person hält das Wissen.",
+        },
+        {
+          id: "compliance-audits",
+          label: "Compliance/Audits",
+          description: "DSGVO, BSI, DORA werden zur Sonderaktion.",
+        },
+        {
+          id: "onboarding-langsam",
+          label: "Onboarding ist langsam",
+          description: "Neue Devs brauchen Wochen.",
+        },
+        {
+          id: "sales-bruecke",
+          label: "Sales-Brücke fehlt",
+          description: "Kein Material, keine Demo-Fähigkeit.",
+        },
+      ],
+    },
+    baseline: {
+      heading: "Euer Team heute",
+      devCount: {
+        label: "Anzahl Entwickler",
+        hint: "FTE, 0 bis 50. Bei 0 schaltet der Kalkulator in den Green-Field-Modus.",
+      },
+      costPerDev: {
+        label: "Vollkosten pro Dev pro Jahr",
+        hint: "Gehalt + AG-Anteil + Overhead.",
+        unit: "EUR",
+      },
+      featurePercent: {
+        label: "Feature-Anteil heute",
+        hint: "Wie viel Prozent der Dev-Zeit fließt in neue Features.",
+      },
+      greenFieldNote:
+        "Kein bestehendes Team. Der Kalkulator zeigt, wie viel Kapazität euer Investment aufbaut.",
+    },
+    budget: {
+      heading: "Euer Investment",
+      sliderLabel: "Budget pro Monat",
+      stops: {
+        einstieg: "Einstieg",
+        empfehlung: "Empfehlung",
+        vollerEffekt: "Volle Wirkung",
+      },
+      horizonLabel: "Zeithorizont",
+      horizonUnit: "Monate",
+      enablementLabel: "Enablement einschließen",
+      enablementHint:
+        "Enablement kostet kurzfristig ca. 40% Velocity. Danach arbeitet euer Team mit bis zu 3x Eigenleistung weiter.",
+      overCapText:
+        "Maximale Kapazität erreicht. Mehr Budget beschleunigt die Phasen nicht weiter.",
+      zeroText:
+        "Ohne Investment bleibt euer Team bei seinem aktuellen Output.",
+      sweetSpotText: "Ab hier entfaltet sich die volle Wirkung.",
+    },
+    charts: {
+      outputHeadline:
+        "Mit eurem Investment liefert euer Team {factor}x so viel nach {months} Monaten.",
+      outputHeadlineEnablement:
+        "Mit PD: {factor}x nach {months} Monaten. Nach PD-Abgang: {teamFactor}x aus eigener Kraft.",
+      outputYLabel: "Output (x Baseline)",
+      outputYLabelGreenField: "Dev-Äquivalente",
+      featureHeadline: "Feature-Anteil entwickelt sich mit euren aktiven Vorteilen.",
+      featureYLabel: "Feature-Anteil (%)",
+      xLabel: "Wochen",
+      teamLabel: "Team (Baseline)",
+      pdLabel: "PD-Output",
+      todayLabel: "Heute",
+      targetLabel: "Ziel: 80%",
+    },
+    hover: {
+      summary:
+        "Woche {iter}: {active} aktiv, {building} im Aufbau, {waiting} wartend. Faktor {factor}x.",
+      active: "aktiv",
+      building: "im Aufbau",
+      waiting: "wartend",
+      compounding: "Zinseszins-Effekt",
+    },
+    benefits: {
+      heading: "Vorteile",
+      moreLabel: "Und das kommt noch dazu: {count} weitere Effekte",
+      phaseLabel: "ab Phase {phase}",
+    },
+    kpiDashboard: {
+      heading: "KPI-Dashboard",
+      clusters: {
+        effizienz: "Effizienz",
+        qualitaet: "Qualität",
+        team: "Team",
+        geschaeft: "Geschäft",
+      },
+      todayLabel: "Heute",
+      targetLabel: "Ziel",
+    },
+    phases: {
+      heading: "AI-Ready-Phasen",
+      reachable: "erreichbar",
+      notReachable: "nicht im Horizont",
+    },
+    cta: {
+      heading: "Bereit für den nächsten Schritt?",
+      subtext: "Kein Druck, kein Pitch.",
+      copyLink: "Link kopieren",
+      copied: "Kopiert!",
+      emailSubject: "Kalkulator-Ergebnis: Lass uns darüber sprechen",
+      emailLabel: "Lass uns darüber sprechen",
+      emailBodyTemplate: "Hallo Performance Dudes,\n\nich habe den Kalkulator auf eurer Website genutzt und würde gerne über die Ergebnisse sprechen.\n\nMein Ergebnis: {link}\n\nKurzzusammenfassung:\n- Team: {devCount} Entwickler, {costPerDev} Vollkosten/Jahr\n- Feature-Anteil heute: {featurePercent}%\n- Investment: {budget}/Monat, Horizont {horizon} Monate\n- Erwarteter Gesamt-Output: {factor}x\n\nWann passt ein kurzer Call?\n\nViele Grüße",
+    },
+    explanations: {
+      budgetContext: "Euer Investment bestimmt wie viele Performance Dudes an eurem Projekt arbeiten und wie schnell sich die Phasen entfalten.",
+      outputContext: "Der Faktor zeigt, wie viel mehr euer Team insgesamt liefert. PD baut Substrat auf, das euer Team dauerhaft schneller macht.",
+      featureContext: "Noch nicht eingerechnet: Durch weniger Bugs und bessere Code-Qualität kann euer Team sich stärker auf Features konzentrieren. Der Feature-Anteil steigt von {start}% Richtung {target}%.",
+      enablementContext: "PD coacht euer Team in AI-nativer Entwicklung. Die Lernkurve sieht man im Chart: erst ein Dip, dann steigt die Team-Baseline über das ursprüngliche Niveau.",
+      postDepartureContext: "Nach unserem Abgang bleibt das Substrat: CLAUDE.md, Quality-Gates, Specs, AI-Workflows, AI-First-Pipelines und das Know-how im Team. Euer Team trägt die Plattform eigenständig.",
+      phasesContext: "Jede Phase baut auf der vorherigen auf. Mehr Budget beschleunigt die technischen Phasen. Die Team-Phasen (6 und 7) brauchen ihre Zeit, egal wie viel ihr investiert.",
+    },
+    disclaimer:
+      "Schätzung basierend auf Erfahrungswerten aus abgeschlossenen Engagements.",
+  },
 } as const;

@@ -27,5 +27,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <HomePage t={getContent("de")} />;
+  return <HomePage t={getContent("de")} locale="de" />;
 }
