@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Nav } from "./components/Nav";
+import { Footer } from "./components/Footer";
 
 /* ─── Types ─── */
 
@@ -101,57 +102,16 @@ function EnvelopeIcon({ size = 18 }: { size?: number }) {
   );
 }
 
-function LinkedInIcon({ size = 16 }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
-  );
-}
-
 /* ─── Page component ─── */
 
-export function HomePage({ t }: { t: Content }) {
+export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
   // Tagline is always "Build fast. Enable. Leave." — split to highlight "fast"
   const taglineParts = t.hero.tagline.split("fast");
 
   return (
     <>
       {/* ── NAV ── */}
-      <header role="banner">
-        <nav
-          className="fixed top-0 left-0 right-0 z-[100] border-b border-[rgba(192,192,200,0.12)]"
-          style={{
-            background: "rgba(26,26,46,0.92)",
-            backdropFilter: "blur(12px)",
-            WebkitBackdropFilter: "blur(12px)",
-          }}
-          aria-label="Site navigation"
-        >
-          <div className="container flex items-center justify-between min-h-[64px] gap-4">
-            <a
-              href="#hero"
-              className="text-[#F1F5F9] font-bold text-base tracking-[0.04em] uppercase no-underline"
-              aria-label="Performance Dudes home"
-            >
-              Performance<span className="text-[#EA580C]">Dudes</span>
-            </a>
-            <a
-              href={`mailto:${t.cta.email}`}
-              className="inline-flex items-center justify-center gap-2 min-h-[48px] px-5 bg-[#EA580C] text-white font-semibold text-sm rounded tracking-wide transition-all duration-200 hover:bg-[#C94D0A] hover:-translate-y-px whitespace-nowrap"
-            >
-              <EnvelopeIcon size={16} />
-              <span className="hidden sm:inline">{t.cta.email}</span>
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Nav />
 
       <main>
         {/* ── HERO ── */}
@@ -503,43 +463,7 @@ export function HomePage({ t }: { t: Content }) {
       </main>
 
       {/* ── FOOTER ── */}
-      <footer
-        className="py-8 text-center"
-        style={{ background: "#111120" }}
-        role="contentinfo"
-      >
-        <div className="container">
-          <p className="text-[0.95rem] font-semibold text-[#F1F5F9] mb-2">
-            Performance Dudes
-          </p>
-          <p className="text-[0.85rem] text-[#C0C0C8] mb-4">
-            {t.footer.tagline}
-          </p>
-          <div className="flex items-center justify-center gap-6 text-sm text-[#C0C0C8]">
-            <Link
-              href={t.footer.switchLangHref}
-              className="hover:text-[#F1F5F9] transition-colors duration-200"
-            >
-              {t.footer.switchLang}
-            </Link>
-            <Link
-              href={t.footer.imprintHref}
-              className="hover:text-[#F1F5F9] transition-colors duration-200"
-            >
-              {t.footer.imprint}
-            </Link>
-            <a
-              href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fperformance-dudes.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 hover:text-[#F1F5F9] transition-colors duration-200"
-            >
-              <LinkedInIcon size={14} />
-              {t.footer.shareLinkedIn}
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer locale={locale} />
     </>
   );
 }

@@ -168,4 +168,151 @@ export const en = {
       },
     ],
   },
+  kalkulator: {
+    meta: {
+      title: "Team Output Calculator | Performance Dudes",
+      description:
+        "Enter your bottleneck, set your investment, and see immediately: what output your team delivers after 12 months, which benefits kick in when, and how your feature-to-bug ratio shifts.",
+    },
+    painPoints: {
+      heading: "What slows your development team down the most?",
+      items: [
+        {
+          id: "shipping-zu-langsam",
+          label: "Shipping too slow",
+          description: "Features do not ship fast enough.",
+        },
+        {
+          id: "bug-last",
+          label: "Bug burden",
+          description: "Hotfixes dominate daily work.",
+        },
+        {
+          id: "releases-stress",
+          label: "Releases are stressful",
+          description: "No predictability.",
+        },
+        {
+          id: "bus-faktor",
+          label: "Bus factor",
+          description: "One person holds all the knowledge.",
+        },
+        {
+          id: "compliance-audits",
+          label: "Compliance/Audits",
+          description: "GDPR, security audits, and regulations become special projects.",
+        },
+        {
+          id: "onboarding-langsam",
+          label: "Onboarding is slow",
+          description: "New devs need weeks to contribute.",
+        },
+        {
+          id: "sales-bruecke",
+          label: "Sales bridge missing",
+          description: "No material, no demo capability.",
+        },
+      ],
+    },
+    baseline: {
+      heading: "Your team today",
+      devCount: {
+        label: "Number of developers",
+        hint: "FTE, 0 to 50. At 0 the calculator switches to green-field mode.",
+      },
+      costPerDev: {
+        label: "Full cost per dev per year",
+        hint: "Salary + employer contributions + overhead.",
+        unit: "EUR",
+      },
+      featurePercent: {
+        label: "Feature share today",
+        hint: "What percentage of dev time goes into new features.",
+      },
+      greenFieldNote:
+        "No existing team. The calculator shows how much capacity your investment builds.",
+    },
+    budget: {
+      heading: "Your investment",
+      sliderLabel: "Budget per month",
+      stops: {
+        einstieg: "Starting point",
+        empfehlung: "Recommended",
+        vollerEffekt: "Full effect",
+      },
+      horizonLabel: "Time horizon",
+      horizonUnit: "months",
+      enablementLabel: "Include enablement",
+      enablementHint:
+        "Enablement costs roughly 40% velocity short-term. Afterwards your team runs at up to 3x independently.",
+      overCapText:
+        "Maximum capacity reached. More budget won't accelerate phases further.",
+      zeroText:
+        "Without investment your team stays at its current output.",
+      sweetSpotText: "From here the full effect unfolds.",
+    },
+    charts: {
+      outputHeadline:
+        "With your investment your team delivers {factor}x as much after {months} months.",
+      outputHeadlineEnablement:
+        "With PD: {factor}x after {months} months. After PD departure: {teamFactor}x on your own.",
+      outputYLabel: "Output (x baseline)",
+      outputYLabelGreenField: "Dev equivalents",
+      featureHeadline: "Feature share develops with your active benefits.",
+      featureYLabel: "Feature share (%)",
+      xLabel: "Weeks",
+      teamLabel: "Team (baseline)",
+      pdLabel: "PD output",
+      todayLabel: "Today",
+      targetLabel: "Target: 80%",
+    },
+    hover: {
+      summary:
+        "Week {iter}: {active} active, {building} building up, {waiting} waiting. Factor {factor}x.",
+      active: "active",
+      building: "building up",
+      waiting: "waiting",
+      compounding: "Compounding effect",
+    },
+    benefits: {
+      heading: "Benefits",
+      moreLabel: "And there is more: {count} additional effects",
+      phaseLabel: "from phase {phase}",
+    },
+    kpiDashboard: {
+      heading: "KPI Dashboard",
+      clusters: {
+        effizienz: "Efficiency",
+        qualitaet: "Quality",
+        team: "Team",
+        geschaeft: "Business",
+      },
+      todayLabel: "Today",
+      targetLabel: "Target",
+    },
+    phases: {
+      heading: "AI-Ready phases",
+      reachable: "reachable",
+      notReachable: "not in horizon",
+    },
+    cta: {
+      heading: "Ready for the next step?",
+      subtext: "No pressure, no pitch.",
+      copyLink: "Copy link",
+      copied: "Copied!",
+      emailSubject: "Calculator result: Let's talk",
+      emailLabel: "Let's talk about this",
+      emailBodyTemplate: "Hi Performance Dudes,\n\nI used the calculator on your website and would like to discuss the results.\n\nMy result: {link}\n\nQuick summary:\n- Team: {devCount} developers, {costPerDev} fully loaded cost/year\n- Feature share today: {featurePercent}%\n- Investment: {budget}/month, {horizon} month horizon\n- Expected total output: {factor}x\n\nWhen works for a quick call?\n\nBest regards",
+    },
+    explanations: {
+      budgetContext: "Your investment determines how many Performance Dudes work on your project and how fast phases unfold.",
+      outputContext: "The factor shows how much more your team delivers overall. PD builds substrate that makes your team permanently faster.",
+      featureContext: "Not yet factored in: with fewer bugs and better code quality, your team can focus more on features. Feature share rises from {start}% toward {target}%.",
+      enablementContext: "PD coaches your team in AI-native development. You can see the learning curve in the chart: a dip first, then the team baseline rises above its original level.",
+      postDepartureContext: "After we leave, the substrate remains: CLAUDE.md, quality gates, specs, AI workflows, AI-first pipelines, and the know-how in your team. Your team carries the platform independently.",
+      phasesContext: "Each phase builds on the previous one. More budget accelerates technical phases. Team phases (6 and 7) take their time regardless of investment.",
+    },
+    disclaimer:
+      "Estimate based on experience from completed engagements.",
+  },
 } as const;
