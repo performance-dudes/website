@@ -26,8 +26,14 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const template = join(here, "og-template.html");
 const publicDir = join(here, "..", "..", "public");
-const outPng = join(publicDir, "og-image-text.png");
-const outJpg = join(publicDir, "og-image-text.jpg");
+
+// Zwei Schriftgrößen-Varianten, beide in einem Lauf:
+//   big     → og-image-text.png/.jpg          (Live-OG, im <meta> referenziert)
+//   compact → og-image-text-compact.png/.jpg  (kleinere Schrift wie das Original)
+const variants = [
+  { size: "big", base: "og-image-text" },
+  { size: "compact", base: "og-image-text-compact" },
+];
 
 let chromium;
 try {
@@ -37,21 +43,26 @@ try {
   process.exit(1);
 }
 
-console.log(`→ rendere ${template} (1200x630) …`);
+console.log(`→ rendere ${template} (1200x630, big + compact) …`);
 const browser = await chromium.launch();
 try {
-  const page = await browser.newPage({
-    viewport: { width: 1200, height: 630 },
-    deviceScaleFactor: 1, // deterministische Pixelmaße, unabhängig vom Host-Display
-  });
-  await page.goto(pathToFileURL(template).href, { waitUntil: "networkidle" });
-  // PNG (Master) + JPG (ausgeliefert) direkt aus Playwright — kein ImageMagick nötig.
-  await page.screenshot({ path: outPng, type: "png" });
-  await page.screenshot({ path: outJpg, type: "jpeg", quality: 90 });
+  for (const { size, base } of variants) {
+    const page = await browser.newPage({
+      viewport: { width: 1200, height: 630 },
+      deviceScaleFactor: 1, // deterministische Pixelmaße, unabhängig vom Host-Display
+    });
+    await page.goto(pathToFileURL(template).href, { waitUntil: "networkidle" });
+    if (size === "compact") await page.evaluate(() => document.body.classList.add("compact"));
+    // PNG (Master) + JPG (ausgeliefert) direkt aus Playwright — kein ImageMagick nötig.
+    const png = join(publicDir, `${base}.png`);
+    const jpg = join(publicDir, `${base}.jpg`);
+    await page.screenshot({ path: png, type: "png" });
+    await page.screenshot({ path: jpg, type: "jpeg", quality: 90 });
+    await page.close();
+    console.log(`✓ ${size.padEnd(7)} → ${png} + .jpg`);
+  }
 } finally {
   await browser.close();
 }
 
-console.log(`✓ ${outPng}`);
-console.log(`✓ ${outJpg}`);
-console.log("Fertig. Beide Dateien in public/ aktualisiert.");
+console.log("Fertig. big → og-image-text.{png,jpg}, compact → og-image-text-compact.{png,jpg}");

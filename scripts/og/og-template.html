@@ -24,6 +24,23 @@
         --orange: #ea580c;
         --white: #f1f5f9;
         --muted: #d0d0d8;
+        /* Schriftgrößen-Preset „big" (Default) — große, plakative Schrift. */
+        --fs-eyebrow: 22px;
+        --fs-title: 92px;
+        --fs-tagline: 40px;
+        --ls-title: -3px;
+        --mb-eyebrow: 26px;
+        --mb-title: 26px;
+      }
+      /* Preset „compact" (wie das ursprüngliche OG-Bild) — kleinere Schrift,
+         engere Abstände. Umschalten: <body class="compact"> bzw. `npm run og -- compact`. */
+      body.compact {
+        --fs-eyebrow: 18px;
+        --fs-title: 56px;
+        --fs-tagline: 27px;
+        --ls-title: -2px;
+        --mb-eyebrow: 20px;
+        --mb-title: 18px;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1200px; height: 630px; }
@@ -54,19 +71,19 @@
 
       .eyebrow {
         display: flex; align-items: center; gap: 14px;
-        color: var(--muted); font-size: 22px; font-weight: 600;
-        letter-spacing: 3px; text-transform: uppercase; margin-bottom: 26px;
+        color: var(--muted); font-size: var(--fs-eyebrow); font-weight: 600;
+        letter-spacing: 3px; text-transform: uppercase; margin-bottom: var(--mb-eyebrow);
       }
       .eyebrow .dash { width: 46px; height: 3px; background: var(--orange); display: block; }
 
       .title {
-        color: var(--white); font-weight: 800; font-size: 92px;
-        letter-spacing: -3px; line-height: 1.02; margin-bottom: 26px;
+        color: var(--white); font-weight: 800; font-size: var(--fs-title);
+        letter-spacing: var(--ls-title); line-height: 1.02; margin-bottom: var(--mb-title);
       }
 
       /* Text hell, nur der betonte Beat orange (+ unterstrichen) — spiegelt den Hero. */
       .tagline {
-        color: var(--white); font-weight: 700; font-size: 40px;
+        color: var(--white); font-weight: 700; font-size: var(--fs-tagline);
         letter-spacing: 0.5px; line-height: 1.32; max-width: 940px;
       }
       /* nowrap: der hervorgehobene Beat bleibt als Einheit zusammen und bricht als

@@ -18,8 +18,15 @@ ausschließlich der Text.
    ```bash
    npm run og
    ```
-   Schreibt `public/og-image-text.png` (Master) **und** `public/og-image-text.jpg`
-   (in den `<meta>`-Tags referenziert).
+   Ein Lauf erzeugt **beide Schriftgrößen-Varianten** (je `.png`-Master +
+   `.jpg`):
+   - `og-image-text.{png,jpg}` — **groß** (Live-OG, in den `<meta>`-Tags
+     referenziert): plakativer Titel, Slogan zweizeilig.
+   - `og-image-text-compact.{png,jpg}` — **kompakt** (kleinere Schrift wie das
+     ursprüngliche Bild): Titel kleiner, Slogan einzeilig.
+
+   Die Größen-Presets stehen im Template als `:root` (big) bzw. `body.compact` —
+   dort die Werte anpassen, wenn eine Variante anders skalieren soll.
 
 > Tagline-Quelle der Website selbst ist `src/content/{de,en}.ts` (`hero.tagline` +
 > `hero.taglineHighlight`). Beim Slogan-Wechsel beide Orte angleichen — hier den
