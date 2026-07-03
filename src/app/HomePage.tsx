@@ -166,7 +166,7 @@ export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
               >
                 {taglineParts[0]}
                 <span
-                  className="text-[#EA580C] underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
+                  className="whitespace-nowrap text-[#EA580C] underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
                 >
                   {t.hero.taglineHighlight}
                 </span>
