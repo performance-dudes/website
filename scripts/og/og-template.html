@@ -93,6 +93,10 @@
         text-decoration: underline; text-decoration-thickness: 3px;
         text-underline-offset: 5px;
       }
+      /* Kompakt: den Lead-in als eigene Zeile setzen, damit der betonte Beat
+         darunter im dunklen linken Bereich landet statt einzeilig in die helle
+         Flag zu laufen (dort war er kaum lesbar). Nur compact — big bleibt. */
+      body.compact .tagline .lead-in { display: block; margin-bottom: 4px; }
     </style>
   </head>
   <body>
@@ -100,7 +104,7 @@
     <div class="content">
       <div class="eyebrow"><span class="dash"></span>AI-Native Software Engineering</div>
       <div class="title">Performance Dudes</div>
-      <div class="tagline">Agents in the team. People in the lead. <u>Growth beyond headcount.</u></div>
+      <div class="tagline"><span class="lead-in">Agents in the team. People in the lead.</span> <u>Growth beyond headcount.</u></div>
     </div>
     <!-- ↑↑↑ EDITIERBARER INHALT ↑↑↑ -->
   </body>
