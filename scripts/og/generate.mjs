@@ -53,6 +53,8 @@ try {
     });
     await page.goto(pathToFileURL(template).href, { waitUntil: "networkidle" });
     if (size === "compact") await page.evaluate(() => document.body.classList.add("compact"));
+    // Auf eingebettete @font-face-Fonts warten, sonst rendert der erste Frame mit Fallback.
+    await page.evaluate(() => document.fonts.ready);
     // PNG (Master) + JPG (ausgeliefert) direkt aus Playwright — kein ImageMagick nötig.
     const png = join(publicDir, `${base}.png`);
     const jpg = join(publicDir, `${base}.jpg`);

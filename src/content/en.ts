@@ -2,8 +2,8 @@ export const en = {
   hero: {
     title: "Performance Dudes",
     eyebrow: "AI-Native Software Engineering",
-    tagline: "Agents in the team. People in the lead. Growth beyond headcount.",
-    taglineHighlight: "Growth beyond headcount.",
+    tagline: "Agents in the team. People in the lead.",
+    taglineHighlight: "People in the lead.",
     text: "Most consultancies sell time. We sell results. Fixed price, delivered in weeks, and when we leave, your team doesn\u2019t need us anymore. We build, modernize, and make software projects AI-ready. For teams across engineering, operations, and beyond. Fast enough that big ideas don\u2019t have to wait.",
   },
   methodology: {

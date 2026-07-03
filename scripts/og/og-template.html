@@ -13,12 +13,25 @@
   Ohne den Generator geht es auch von Hand: diese Datei in Chrome öffnen,
   Screenshot exakt auf 1200x630, als og-image-text.png speichern.
 
-  Der hervorgehobene Beat ist orange + unterstrichen — hier `Growth beyond headcount.`
+  Der hervorgehobene Beat ist orange + unterstrichen — hier `People in the lead.`
 -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <style>
+      /* Source Sans 3 (SIL OFL) — schlanke, humanistische Sans, nahe an der
+         Segoe-artigen Optik des Original-OG-Bilds. Liegt projekt-lokal in
+         scripts/og/fonts/ (nicht in gitignored node_modules), damit das Rendern
+         auch ohne devDep reproduzierbar bleibt. Nur die kompakte Variante nutzt
+         sie (body.compact); die große bleibt beim System-Font wie der Hero. */
+      @font-face {
+        font-family: "Source Sans 3"; font-weight: 400; font-style: normal; font-display: block;
+        src: url("fonts/source-sans-3-latin-400-normal.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Source Sans 3"; font-weight: 500; font-style: normal; font-display: block;
+        src: url("fonts/source-sans-3-latin-500-normal.woff2") format("woff2");
+      }
       :root {
         --navy: #1a1a2e;
         --orange: #ea580c;
@@ -39,6 +52,7 @@
          Schrift (leichteres Gewicht, näher an der schlanken Original-Optik).
          Umschalten: <body class="compact"> bzw. `npm run og -- compact`. */
       body.compact {
+        font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, sans-serif;
         --fs-eyebrow: 18px;
         --fs-title: 56px;
         --fs-tagline: 27px;
@@ -93,17 +107,17 @@
         color: var(--white); font-weight: var(--fw-tagline); font-size: var(--fs-tagline);
         letter-spacing: 0.5px; line-height: 1.32; max-width: 940px;
       }
-      /* nowrap: der hervorgehobene Beat bleibt als Einheit zusammen und bricht als
-         Ganzes um, statt „Growth" allein am Zeilenende zu lassen. */
+      /* nowrap: der hervorgehobene Beat bleibt als Einheit zusammen und bricht
+         nicht mitten in der Phrase um. */
       .tagline u {
         color: var(--orange); white-space: nowrap;
         text-decoration: underline; text-decoration-thickness: 3px;
         text-underline-offset: 5px;
       }
-      /* Kompakt: den Lead-in als eigene Zeile setzen, damit der betonte Beat
-         darunter im dunklen linken Bereich landet statt einzeilig in die helle
-         Flag zu laufen (dort war er kaum lesbar). Nur compact — big bleibt. */
-      body.compact .tagline .lead-in { display: block; margin-bottom: 4px; }
+      /* Den Lead-in ("Agents in the team.") als eigene Zeile setzen, damit der
+         betonte Beat darunter im dunklen linken Bereich landet statt in die helle
+         Flag zu laufen. Gilt für beide Größen. */
+      .tagline .lead-in { display: block; margin-bottom: 4px; }
     </style>
   </head>
   <body>
@@ -111,7 +125,7 @@
     <div class="content">
       <div class="eyebrow"><span class="dash"></span>AI-Native Software Engineering</div>
       <div class="title">Performance Dudes</div>
-      <div class="tagline"><span class="lead-in">Agents in the team. People in the lead.</span> <u>Growth beyond headcount.</u></div>
+      <div class="tagline"><span class="lead-in">Agents in the team.</span> <u>People in the lead.</u></div>
     </div>
     <!-- ↑↑↑ EDITIERBARER INHALT ↑↑↑ -->
   </body>
