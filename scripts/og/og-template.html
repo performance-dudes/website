@@ -31,16 +31,23 @@
         --ls-title: -3px;
         --mb-eyebrow: 26px;
         --mb-title: 26px;
+        --fw-eyebrow: 600;
+        --fw-title: 800;
+        --fw-tagline: 700;
       }
-      /* Preset „compact" (wie das ursprüngliche OG-Bild) — kleinere Schrift,
-         engere Abstände. Umschalten: <body class="compact"> bzw. `npm run og -- compact`. */
+      /* Preset „compact" (wie das ursprüngliche OG-Bild) — kleinere UND feinere
+         Schrift (leichteres Gewicht, näher an der schlanken Original-Optik).
+         Umschalten: <body class="compact"> bzw. `npm run og -- compact`. */
       body.compact {
         --fs-eyebrow: 18px;
         --fs-title: 56px;
         --fs-tagline: 27px;
-        --ls-title: -2px;
+        --ls-title: -1px;
         --mb-eyebrow: 20px;
         --mb-title: 18px;
+        --fw-eyebrow: 400;
+        --fw-title: 500;
+        --fw-tagline: 400;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1200px; height: 630px; }
@@ -71,19 +78,19 @@
 
       .eyebrow {
         display: flex; align-items: center; gap: 14px;
-        color: var(--muted); font-size: var(--fs-eyebrow); font-weight: 600;
+        color: var(--muted); font-size: var(--fs-eyebrow); font-weight: var(--fw-eyebrow);
         letter-spacing: 3px; text-transform: uppercase; margin-bottom: var(--mb-eyebrow);
       }
       .eyebrow .dash { width: 46px; height: 3px; background: var(--orange); display: block; }
 
       .title {
-        color: var(--white); font-weight: 800; font-size: var(--fs-title);
+        color: var(--white); font-weight: var(--fw-title); font-size: var(--fs-title);
         letter-spacing: var(--ls-title); line-height: 1.02; margin-bottom: var(--mb-title);
       }
 
       /* Text hell, nur der betonte Beat orange (+ unterstrichen) — spiegelt den Hero. */
       .tagline {
-        color: var(--white); font-weight: 700; font-size: var(--fs-tagline);
+        color: var(--white); font-weight: var(--fw-tagline); font-size: var(--fs-tagline);
         letter-spacing: 0.5px; line-height: 1.32; max-width: 940px;
       }
       /* nowrap: der hervorgehobene Beat bleibt als Einheit zusammen und bricht als
