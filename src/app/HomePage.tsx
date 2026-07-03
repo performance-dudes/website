@@ -14,6 +14,7 @@ type Content = {
     readonly title: string;
     readonly eyebrow: string;
     readonly tagline: string;
+    readonly taglineHighlight: string;
     readonly text: string;
   };
   readonly methodology: { readonly text: string };
@@ -105,8 +106,10 @@ function EnvelopeIcon({ size = 18 }: { size?: number }) {
 /* ─── Page component ─── */
 
 export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
-  // Tagline is always "Build fast. Enable. Leave." — split to highlight "fast"
-  const taglineParts = t.hero.tagline.split("fast");
+  // Highlight one beat of the tagline (underlined). The highlighted phrase is
+  // content-driven (t.hero.taglineHighlight) so the slogan can change without
+  // touching this component — split around it and render the phrase in the span.
+  const taglineParts = t.hero.tagline.split(t.hero.taglineHighlight);
 
   return (
     <>
@@ -164,7 +167,7 @@ export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
                 <span
                   className="underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
                 >
-                  fast
+                  {t.hero.taglineHighlight}
                 </span>
                 {taglineParts[1]}
               </p>

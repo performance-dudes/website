@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Senior engineers. Fixed price, delivered in weeks. We build, modernize, and make software AI-ready. When we leave, your team keeps shipping independently.",
   keywords: ["fixed price software development", "AI-first software engineering", "software modernization consulting Germany", "AI-ready codebase", "senior software engineers"],
   openGraph: {
-    title: "Performance Dudes — Build fast. Enable. Leave.",
+    title: "Performance Dudes — Growth beyond headcount",
     description: "Senior engineers. Fixed price, delivered in weeks. We build, modernize, and make software AI-ready.",
     url: "https://performance-dudes.de/en",
     siteName: "Performance Dudes",
