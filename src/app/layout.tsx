@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Performance Dudes — Build fast. Enable. Leave.",
+    title: "Performance Dudes — People in the lead",
     description: "Senior engineers. Fixed price, delivered in weeks. AI-native software engineering.",
     images: ["/og-image-text.jpg"],
   },

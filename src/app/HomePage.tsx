@@ -14,6 +14,7 @@ type Content = {
     readonly title: string;
     readonly eyebrow: string;
     readonly tagline: string;
+    readonly taglineHighlight: string;
     readonly text: string;
   };
   readonly methodology: { readonly text: string };
@@ -105,8 +106,10 @@ function EnvelopeIcon({ size = 18 }: { size?: number }) {
 /* ─── Page component ─── */
 
 export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
-  // Tagline is always "Build fast. Enable. Leave." — split to highlight "fast"
-  const taglineParts = t.hero.tagline.split("fast");
+  // Highlight one beat of the tagline (underlined). The highlighted phrase is
+  // content-driven (t.hero.taglineHighlight) so the slogan can change without
+  // touching this component — split around it and render the phrase in the span.
+  const taglineParts = t.hero.tagline.split(t.hero.taglineHighlight);
 
   return (
     <>
@@ -155,16 +158,17 @@ export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
                 {t.hero.title}
               </h1>
 
-              {/* Tagline */}
+              {/* Tagline — Text hell, nur der betonte Beat orange (+ unterstrichen),
+                  damit der lange Drei-Beat-Slogan nicht komplett orange überladen wirkt. */}
               <p
-                className="font-bold text-[#EA580C] tracking-[0.04em] mb-8"
+                className="font-bold text-[#F1F5F9] tracking-[0.04em] mb-8"
                 style={{ fontSize: "clamp(1.15rem, 2.5vw, 1.5rem)" }}
               >
                 {taglineParts[0]}
                 <span
-                  className="underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
+                  className="whitespace-nowrap text-[#EA580C] underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
                 >
-                  fast
+                  {t.hero.taglineHighlight}
                 </span>
                 {taglineParts[1]}
               </p>
