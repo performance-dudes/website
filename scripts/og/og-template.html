@@ -54,7 +54,7 @@
       body.compact {
         font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, sans-serif;
         --fs-eyebrow: 18px;
-        --fs-title: 56px;
+        --fs-title: 54px;
         --fs-tagline: 27px;
         --ls-title: -1px;
         --mb-eyebrow: 20px;
@@ -88,7 +88,7 @@
         padding: 0 90px;
       }
 
-      .content { position: relative; z-index: 2; max-width: 1000px; }
+      .content { position: relative; z-index: 2; max-width: 1000px; display: flex; flex-direction: column; }
 
       .eyebrow {
         display: flex; align-items: center; gap: 14px;
@@ -116,8 +116,22 @@
       }
       /* Den Lead-in ("Agents in the team.") als eigene Zeile setzen, damit der
          betonte Beat darunter im dunklen linken Bereich landet statt in die helle
-         Flag zu laufen. Gilt für beide Größen. */
+         Flag zu laufen (nur big — compact setzt ihn unten wieder inline). */
       .tagline .lead-in { display: block; margin-bottom: 4px; }
+
+      /* ── Compact-Layout: dem ursprünglichen OG-Bild nachempfunden ──
+         Titel oben, „AI-Native Software Engineering" als schlichter grauer
+         Untertitel direkt darunter (kein Kapitälchen-Eyebrow mit orange Strich),
+         Slogan einzeilig, der ganze Block oben-links statt vertikal zentriert. */
+      body.compact { justify-content: flex-start; padding-top: 258px; }
+      body.compact .title { order: 1; margin-bottom: 0; }
+      body.compact .eyebrow {
+        order: 2; text-transform: none; letter-spacing: normal; gap: 0;
+        font-size: 30px; color: #b6bdc9; margin-bottom: 10px; margin-top: 0;
+      }
+      body.compact .eyebrow .dash { display: none; }
+      body.compact .tagline { order: 3; }
+      body.compact .tagline .lead-in { display: inline; margin-bottom: 0; }
     </style>
   </head>
   <body>
