@@ -2,17 +2,18 @@
 <!--
   OG-Bild-Template (1200x630) für performance-dudes.de — Social/OpenGraph.
 
-  REPRODUZIERBAR: Dies ist die Quelle des OG-Bilds. Zum Ändern des Slogans NUR
-  die Texte in <body> unten anpassen, dann neu rendern:
+  REPRODUZIERBAR, OHNE GEMINI: Der Hintergrund ist das bestehende, textlose
+  Marken-Bild `public/og-image.png` (asphalt-navy, Checkered-Flag, orange
+  Speed-Lines). Dieses Template legt NUR den Text als Overlay darüber. Zum Ändern
+  des Slogans NUR die Texte in <body> unten anpassen, dann neu rendern:
 
       npm run og        # rendert → public/og-image-text.{png,jpg}
 
+  Der Hintergrund bleibt dabei unangetastet — es wechselt ausschließlich der Text.
   Ohne den Generator geht es auch von Hand: diese Datei in Chrome öffnen,
-  Fenster/Screenshot exakt auf 1200x630, als og-image-text.png speichern.
+  Screenshot exakt auf 1200x630, als og-image-text.png speichern.
 
-  Design spiegelt die Hero-Section (globals.css / HomePage.tsx): Navy #1A1A2E,
-  Orange #EA580C, System-Font-Stack, Speed-Lines + Checkered-Flag-Akzent.
-  Der hervorgehobene Beat ist unterstrichen — hier `Growth beyond headcount.`
+  Der hervorgehobene Beat ist orange + unterstrichen — hier `Growth beyond headcount.`
 -->
 <html lang="en">
   <head>
@@ -22,43 +23,31 @@
         --navy: #1a1a2e;
         --orange: #ea580c;
         --white: #f1f5f9;
-        --muted: #c0c0c8;
+        --muted: #d0d0d8;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1200px; height: 630px; }
       body {
         position: relative;
         overflow: hidden;
-        background: var(--navy);
+        /* Hintergrund = bestehendes Marken-Bild; darüber ein von links nach rechts
+           auslaufender Navy-Verlauf, damit der helle Text links immer lesbar bleibt
+           und die Checkered-Flag rechts frei sichtbar bleibt. */
+        background-image:
+          linear-gradient(90deg,
+            rgba(16, 16, 30, 0.95) 0%,
+            rgba(16, 16, 30, 0.82) 40%,
+            rgba(16, 16, 30, 0.28) 66%,
+            rgba(16, 16, 30, 0.00) 100%),
+          url(../../public/og-image.png);
+        background-size: cover, cover;
+        background-position: center, center;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 90px;
-      }
-
-      /* Speed-Lines: schräge orange Streifen, subtil (Hero-Motiv) */
-      .speed-lines { position: absolute; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
-      .speed-lines span {
-        position: absolute; top: -30%; height: 160%; width: 3px;
-        background: linear-gradient(to bottom, transparent, var(--orange), transparent);
-        transform: rotate(-8deg); opacity: 0.5;
-      }
-      .speed-lines span:nth-child(1) { right: 8%; opacity: 0.65; }
-      .speed-lines span:nth-child(2) { right: 14%; height: 120%; opacity: 0.35; }
-      .speed-lines span:nth-child(3) { right: 3%; height: 140%; width: 2px; opacity: 0.28; }
-      .speed-lines span:nth-child(4) { right: 19%; height: 90%; width: 2px; opacity: 0.22; }
-
-      /* Checkered-Flag-Akzent: kleines Schachbrett oben rechts */
-      .flag {
-        position: absolute; top: 54px; right: 90px; z-index: 1;
-        width: 132px; height: 44px; opacity: 0.9;
-        background-image:
-          conic-gradient(var(--white) 90deg, transparent 90deg 180deg, var(--white) 180deg 270deg, transparent 270deg);
-        background-size: 22px 22px; background-position: 0 0;
-        mask-image: linear-gradient(to right, transparent, #000 40%);
-        -webkit-mask-image: linear-gradient(to right, transparent, #000 40%);
       }
 
       .content { position: relative; z-index: 2; max-width: 1000px; }
@@ -75,11 +64,10 @@
         letter-spacing: -3px; line-height: 1.02; margin-bottom: 26px;
       }
 
-      /* Text hell, nur der betonte Beat orange (+ unterstrichen) — spiegelt den
-         Hero: kein komplett-oranger, überladener Slogan. */
+      /* Text hell, nur der betonte Beat orange (+ unterstrichen) — spiegelt den Hero. */
       .tagline {
         color: var(--white); font-weight: 700; font-size: 40px;
-        letter-spacing: 0.5px; line-height: 1.32; max-width: 960px;
+        letter-spacing: 0.5px; line-height: 1.32; max-width: 940px;
       }
       /* nowrap: der hervorgehobene Beat bleibt als Einheit zusammen und bricht als
          Ganzes um, statt „Growth" allein am Zeilenende zu lassen. */
@@ -91,9 +79,6 @@
     </style>
   </head>
   <body>
-    <div class="speed-lines"><span></span><span></span><span></span><span></span></div>
-    <div class="flag"></div>
-
     <!-- ↓↓↓ EDITIERBARER INHALT — bei Slogan-Wechsel nur hier ändern ↓↓↓ -->
     <div class="content">
       <div class="eyebrow"><span class="dash"></span>AI-Native Software Engineering</div>

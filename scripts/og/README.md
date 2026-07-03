@@ -3,8 +3,12 @@
 Reproduzierbare Erzeugung des Social-/OpenGraph-Bilds
 `public/og-image-text.{png,jpg}` (1200×630) für performance-dudes.de.
 
-Kein Pixel-Editing, kein Gemini-Einmalbild: das Bild ist **Code**. Quelle ist ein
-HTML-Template, gerendert von einem projekt-lokalen Chromium.
+Kein Pixel-Editing, kein Gemini-Neugenerieren: das Bild ist **Code**. Der
+Hintergrund ist das bestehende, textlose Marken-Bild `public/og-image.png`
+(asphalt-navy, Checkered-Flag, orange Speed-Lines); ein HTML-Template legt nur den
+**Text als Overlay** darüber und wird von einem projekt-lokalen Chromium gerendert.
+Der Hintergrund bleibt unangetastet — bei einem Slogan-Wechsel ändert sich
+ausschließlich der Text.
 
 ## Slogan/Tagline ändern
 
@@ -44,6 +48,13 @@ exportieren.
 
 ## Design
 
-Spiegelt die Hero-Section (`src/app/globals.css`, `src/app/HomePage.tsx`): Navy
-`#1A1A2E`, Orange `#EA580C`, System-Font-Stack, Speed-Lines + Checkered-Flag-
-Akzent. So bleibt das Social-Bild optisch deckungsgleich mit der Landingpage.
+Hintergrund ist das Marken-Bild `public/og-image.png` (asphalt-navy,
+Checkered-Flag, orange Speed-Lines). Darüber ein von links nach rechts
+auslaufender Navy-Verlauf, damit der helle Text links lesbar bleibt und die Flag
+rechts frei sichtbar ist. Typografie spiegelt die Hero-Section
+(`src/app/HomePage.tsx`): Orange `#EA580C` nur als Akzent — der Slogan hell, nur
+der betonte Beat orange + unterstrichen. So bleibt das Social-Bild optisch
+deckungsgleich mit der Landingpage.
+
+**Hintergrund wechseln** (selten): `public/og-image.png` austauschen — das
+Template referenziert es relativ (`url(../../public/og-image.png)`).
