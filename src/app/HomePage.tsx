@@ -158,14 +158,15 @@ export function HomePage({ t, locale }: { t: Content; locale: "de" | "en" }) {
                 {t.hero.title}
               </h1>
 
-              {/* Tagline */}
+              {/* Tagline — Text hell, nur der betonte Beat orange (+ unterstrichen),
+                  damit der lange Drei-Beat-Slogan nicht komplett orange überladen wirkt. */}
               <p
-                className="font-bold text-[#EA580C] tracking-[0.04em] mb-8"
+                className="font-bold text-[#F1F5F9] tracking-[0.04em] mb-8"
                 style={{ fontSize: "clamp(1.15rem, 2.5vw, 1.5rem)" }}
               >
                 {taglineParts[0]}
                 <span
-                  className="underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
+                  className="text-[#EA580C] underline decoration-[3px] underline-offset-[4px] decoration-[#EA580C]"
                 >
                   {t.hero.taglineHighlight}
                 </span>
