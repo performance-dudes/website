@@ -45,3 +45,5 @@ All website content aligns to brand and strategy docs in the [orga repo](https:/
 | 006 | [Who we are for credibility](006-who-we-are.md) | Active |
 | 007 | [CTA: conversation not form](007-cta-conversation.md) | Active |
 | 008 | [Future considerations](008-future-considerations.md) | Planning |
+| 009 | [German as default, content-driven i18n](009-german-default-content-driven-i18n.md) | Active |
+| 010 | [Vibe Engineering pillar page](010-vibe-engineering-pillar-page.md) | Active |
