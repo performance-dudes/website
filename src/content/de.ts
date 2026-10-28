@@ -167,6 +167,18 @@ export const de = {
         title: "Datenschutz",
         text: "Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten m\u00f6glich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit m\u00f6glich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdr\u00fcckliche Zustimmung nicht an Dritte weitergegeben. Der Nutzung von im Rahmen der Impressumspflicht ver\u00f6ffentlichten Kontaktdaten durch Dritte zur \u00dcbersendung von nicht ausdr\u00fccklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr\u00fccklich widersprochen. Die Betreiber der Seiten behalten sich ausdr\u00fccklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.",
       },
+      {
+        title: "Hosting",
+        text: "Diese Webseite wird \u00fcber GitHub Pages bereitgestellt, einen Dienst der GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Zugriffsdaten, insbesondere Ihre IP-Adresse, um die Seiten auszuliefern und den Betrieb abzusichern. Dabei k\u00f6nnen Daten in die USA \u00fcbertragen werden. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und zuverl\u00e4ssigen Bereitstellung der Webseite (Art. 6 Abs. 1 lit. f DSGVO). Details finden Sie in der Datenschutzerkl\u00e4rung von GitHub: https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement",
+      },
+      {
+        title: "Reichweitenmessung",
+        text: "Zur Reichweitenmessung nutzen wir ein eigenes, selbst betriebenes Analysewerkzeug unter analytics.performance-dudes.com. Die Daten verbleiben bei uns und werden nicht an Dritte weitergegeben. Erfasst werden die aufgerufene Seite, die verweisende Seite, die Breite des Browserfensters sowie Kampagnenparameter (UTM) aus der URL. Es werden keine Cookies gesetzt und weder Ihre IP-Adresse noch Ihre Browserkennung gespeichert. Sendet Ihr Browser ein Do-Not-Track- oder Global-Privacy-Control-Signal, findet keine Messung statt. Rechtsgrundlage ist unser berechtigtes Interesse, die Nutzung unserer Webseite zu verstehen und zu verbessern (Art. 6 Abs. 1 lit. f DSGVO).",
+      },
+      {
+        title: "Ihre Rechte",
+        text: "Sie haben das Recht auf Auskunft, Berichtigung, L\u00f6schung und Einschr\u00e4nkung der Verarbeitung Ihrer Daten, auf Daten\u00fcbertragbarkeit sowie auf Widerspruch gegen die Verarbeitung. Au\u00dferdem k\u00f6nnen Sie sich bei einer Datenschutz-Aufsichtsbeh\u00f6rde beschweren. Wenden Sie sich dazu an die oben genannte Kontaktadresse.",
+      },
     ],
   },
   kalkulator: {
