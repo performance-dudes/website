@@ -169,7 +169,7 @@ export const en = {
       },
       {
         title: "Hosting",
-        text: "This website is served via GitHub Pages, a service of GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you access the pages, GitHub processes technically necessary access data, in particular your IP address, to deliver the pages and secure their operation. Data may be transferred to the USA in the process. The legal basis is our legitimate interest in providing the website securely and reliably (Art. 6(1)(f) GDPR). For details, see GitHub's privacy statement: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+        text: "This website is served via GitHub Pages, a service of GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you access the pages, GitHub collects data transmitted by your browser in server log files: IP address, date and time of the request, page requested, referring page (referrer), HTTP status code, amount of data transferred, and information about browser and operating system. This is necessary to deliver the pages and to ensure stability and security. We have no direct access to this data. The legal basis is our legitimate interest in providing the website securely and reliably (Art. 6(1)(f) GDPR). The data is deleted as soon as the purpose of processing no longer applies. The servers are located in the USA. For transfers there, GitHub uses the EU Standard Contractual Clauses. For details, see GitHub's privacy statement: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
       },
       {
         title: "Audience measurement",
