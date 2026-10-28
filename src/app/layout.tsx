@@ -33,6 +33,14 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className="antialiased">
+        {/* Cookieloses Analytics (pd-analytics), beforeInteractive damit das
+            Tag im serverseitigen <head> landet — der Tracker leitet seinen
+            Collect-Endpunkt aus seiner eigenen src ab. */}
+        <Script
+          src="https://analytics.performance-dudes.com/tracker.js"
+          data-site="pd-www"
+          strategy="beforeInteractive"
+        />
         <OrganizationJsonLd />
         {children}
         <Script id="scroll-reveal" strategy="afterInteractive">{`
