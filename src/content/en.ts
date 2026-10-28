@@ -167,6 +167,18 @@ export const en = {
         title: "Data protection",
         text: "The use of our website is generally possible without providing personal data. Insofar as personal data (such as name, address, or email addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent. We point out that data transmission over the Internet (e.g., communication by email) can have security gaps. Complete protection of data against access by third parties is not possible. The use of contact data published within the framework of the imprint obligation by third parties for sending unsolicited advertising and information materials is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information, such as spam emails.",
       },
+      {
+        title: "Hosting",
+        text: "This website is served via GitHub Pages, a service of GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you access the pages, GitHub collects data transmitted by your browser in server log files: IP address, date and time of the request, page requested, referring page (referrer), HTTP status code, amount of data transferred, and information about browser and operating system. This is necessary to deliver the pages and to ensure stability and security. We have no direct access to this data. The legal basis is our legitimate interest in providing the website securely and reliably (Art. 6(1)(f) GDPR). The data is deleted as soon as the purpose of processing no longer applies. The servers are located in the USA. For transfers there, GitHub uses the EU Standard Contractual Clauses. For details, see GitHub's privacy statement: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      },
+      {
+        title: "Audience measurement",
+        text: "To measure our reach, we use our own, self-hosted analytics tool at analytics.performance-dudes.com. The data stays with us and is not shared with third parties. We record the page visited, the referring page, the width of the browser window, and campaign parameters (UTM) from the URL. No cookies are set, and neither your IP address nor your browser identifier is stored. If your browser sends a Do Not Track or Global Privacy Control signal, no measurement takes place. The legal basis is our legitimate interest in understanding and improving how our website is used (Art. 6(1)(f) GDPR).",
+      },
+      {
+        title: "Your rights",
+        text: "You have the right to access, rectification, erasure, and restriction of processing of your data, to data portability, and to object to processing. You may also lodge a complaint with a data protection supervisory authority. To exercise these rights, contact us at the address above.",
+      },
     ],
   },
   kalkulator: {
